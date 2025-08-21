@@ -1,0 +1,203 @@
+%!TEX root = ../dokumentation.tex
+
+% -------------------------------
+\chapter{Literature and State of the Art} % ~5–6 pages, ~2000–2400 words
+% -------------------------------
+\label{chap:literature}
+In this chapter, the current state of the art and literature get presented.
+First, the development of machine learning to distributed machine learning gets sketched. Then, \ac{ASTRA-Sim} gets presented and compared to alternative \ac{DML} (simulation) approaches.
+Lastly, \ac{UI} and \ac{UX} best practices, with a focus on evaluation criteria and \aac{UI} for scientific tools get presented. 
+
+\section{History of Distributed Machine Learning}
+% 1. ML: Zyklus, Purpose
+\ac{DML} is a concept based on \ac{ML} distributed on multiple machines. To deeply understand it, one needs to know basics of \ac{ML} first.
+
+\subsubsection*{Development of Machine Learning}
+%% Historical
+%%% Early Turing + (59er book)
+The concept of machines learning similar to human learning was first proposed in 1950 by Turing \cite{turing_computing_1989}. He proposed the first known of theoretical description of the concept that later became known as \ac{AI}.
+In his paper, he introduces basics such as the idea that machines could simulate human intelligence, if they are given the right data and algorithms. He states that learning, similar to children education is central and supports it with evolutionary algorithms. He claims that machines, which can be seen as discrete-state machines, can simulate anything, which enables them to universal computational capabilities useable for \ac{ML}.
+
+Following this basic idea, the first working \ac{ML} program was introduced in 1959 by Samuel \cite{samuel_studies_1959}. Samuel presents a program that is able to play the game checkers better than its programmer, with only 8 -- 10 hours of playing and information such as rules of the game. This program is based on self-improvement, it adjusts its strategy based on previous outcomes. Therefor it is the first documented ``self learning'' algorithm. The learn process has two approaches; one is memorizing each board positions evaluation and the other one to adjust this evaluation function based on experiences.  In this version, it uses the delta between expected and actual result to update expected parameters.
+
+%%% Statistical Learning
+At this time early \ac{ML} begun and these concepts were expanded, as in 1963 Abramson presents further pattern recognition and machine learning approaches \cite{abramson_pattern_1963}. Here, statistical approaches were introduced and data was first viewed as vectors in a multidimensional space. He framed pattern recognition as a classification problem in vector spaces with two subproblems, being the partitioning techniques and choice of measurements. 
+Also, the first idea of a distinction between supervised and unsupervised training was explained. But there were still gaps in research that only had to be discovered in the following years, like the selection of relevant features.
+
+In the following years, many concepts of \ac{ML} were revised and newly discovered. Such as backpropagation in the 80s \cite{rojas_backpropagation_1996}, that introduced using gradient calculation for loss correction, or the big data field especially in the 2000s \cite{perez_karich_emergence_2025}. 
+
+%% Reason for Distribution
+As \ac{ML} grew and gained importance, problems regarding growing demands arose. One is the growing availability of datasets. With more data available, training once possible in a few ours might take days or even years to finish, if not optimized. The data is also more complex, forming vectors of increasing dimensions, compared to past data.
+Also, models are increasing in complexity, so do deep networks have trillions of parameters compared to shallow neural networks in 1990 \cite{oneto_limitations_2020}.
+These problems demand a solution. Parts of these problems could be solved by scaling with improved hardware as an option, as chips could be made more efficient by scaling with smaller transistors~\cite{sevilla_compute_2022}. This approach, based on Moore's law~\cite{moore_cramming_2006}, is not upholdable anymore, in the 2010s it was declared ``dead''~\cite{theis_end_2017}.
+% This approach, based on Moore's law, is not upholdable anymore, in 2022 it was declared ``dead'' by Nvidias CEO~\cite{}.
+Naturally, the developed solution was distributing the training. \ac{DML} is a subset of \ac{ML} that splits the training process onto multiple \acp{NPU}~\cite{bekkerman_scaling_2011}.
+In 2024, distributed training became the standard for large scale systems and remained the state of the art~\cite{li_understanding_2024}. 
+
+\subsubsection*{DML Basics}
+%% Either topic separated or timeline
+%% Clusters, GPUs/TPUs, cloud computing, IaaS (SimGrid IaaS paper can illustrate system-level concerns).
+%% Topologies
+With \ac{DML} a solution for scaling was introduced, and new challenges have to be solved.
+Distributing the machine learning process is not straightforward---it depends on many factors, such as the way of splitting, network latencies and communication strategies.
+
+% TODO describe very basic the basics like computation & communciation
+The basic \ac{DML} process combines individual computation of different workers with a communication between them. That way they can train one model together by separating tasks. This separation can follow two approaches visualized in figure \ref{fig:parallelism} by the official PyTorch website (https://docs.pytorch.org/torchrec/high-level-arch.html) \cite{}.
+One, called data parallelism, is splitting the data that the model is supposed to train on. That way, all workers iteratively train a part of the data onto the same model and communicate the models parameters and gradients between computation iterations. 
+While data parallelism has the advantage of being easily implementable and reduce computation times nearly linearly (TODO check if true lol), its communication can create new overheads if workloads are distributed unevenly and a synchronous communication is used. Detailed on that and further advantages and disadvantages get discussed in section \ref{sec:discussion}.
+The other parallelization, called model parallelism, a type being for example pipeline parallelism, is focussing on splitting the models parts onto the workers. Here, the layers of the model are divided and trained separately with according communication. This has the advantage of enabling training to include large models, but requires more complicated communication than data parallelism.
+Common are also hybrid approaches in which both data and models get split. This combines advantages such as a high scalability and the possibility for an efficient training performance, but new introduced challenges are finding the optimal distribution  between data and model parallel strategies as well as for load balancing communication and computation efficiently~\cite{boehm_hybrid_2014}.
+
+\begin{figure}[h]  % TODO make an own visualization, and maybe use H instead
+  \centering
+  \includegraphics[width=0.7\linewidth]{parallelism.png}
+  \caption{Parallelism Strategies}
+  \label{fig:parallelism}
+\end{figure}
+
+% 2. Hardware: Topologies, latency, bandwith, structure
+\subsubsection*{Hardware Details}
+The workers used in the \ac{DML} process, generally called \acp{NPU}, are usually \acp{GPU}. They can appear in high amounts, from 8 \acp{GPU} for research purposes to 1000s for \acp{LLM} like GPT-5~\cite{}.
+
+A set of \acp{NPU} structured together is called cluster, and each cluster is able to take different amounts of them. How they are connected in each cluster is described by a physical network topology. Every cluster in one machine, or called node, respectively, communicates via intra-node-communication. \acp{NPU} communicating between different nodes is possible over \acp{NIC}, which are connected in an inter-node-network.
+% Bandwidths and Latencies
+While intra-node communication has low latencies and high bandwidths, inter-node-communication has rater high latencies and low bandwidths. This would make a distributed training with few machines attractive, but realistic distribution onto many machines is much more scalable \cite{}. That is due to the limited amount of \acp{GPU} in one server~\cite{}. Therefore, large distributed systems use and depend on both, intra and inter-node-communication.
+% Topologies
+The topologies of distributed systems can be based on different architectures. Verbreaken presents that there are four types of topologies that can exist for distributed systems~\cite{verbraeken_survey_2020}. Generally they can be divided into centralized, decentralized and fully distributed topologies, based on the degree of the distribution. A structural overview can be found in~\ref{fig:topologies}.
+
+% have a central server that orchestrates them or be decentralized instead. .
+
+\begin{figure}[H]  % TODO make a better visualization, especially for the parameter server
+  \centering
+  \includegraphics[width=1\linewidth]{topologies.png}
+  \caption{Network Topologies}
+  \label{fig:topologies}
+\end{figure}
+
+The centralized topology is characterized by a strict hierarchical structure in which all nodes are connected with one central server that orchestrates them and performs the necessary steps for the combination of the machine learning. It serves a simple coordination but is limited in scalability due to having a single point of failure.
+
+The tree topology is a decentralized topology in which the nodes are structured hierarchical. The communication takes place between the nodes in specific directions. Information is communicated upwards and distributed downwards. This is scalable as every node only communicates with children or parents.
+
+The parameter server topology is a second decentralized topology that combines centralized parameter servers to store and retrieve gradients with decentralized \ac{ML} nodes. These servers have a shared memory, so the parameters can be synchronized between multiple parts. The disadvantage of this is that all communication happens at the parameter servers, creating bottlenecks if many workers are combined with few servers.
+
+A fully distributed topology works like a peer-to-peer network, meaning each node holds its own copy of the models parameters and is able to communicate with all other nodes. Communication is possible in every direction and at any time. This is very scalable, as new workers can be added without a high centralized overload, but it has the disadvantage that the communication can create a high overhead if every worker broadcasts its information.
+
+Topologies can be asymmetric or symmetric, depending on if the connections are bidirectional or unidirectional. For fully distributed systems both could be possible, while all other topologies depend on bidirectional connections~\cite{won_tacos_2024}.
+
+% TODO check if something hardware related is missing
+% TODO add common hardware solutions such as NVLink etc
+
+% Different System architectures can be used. For example an all to all approach in which all 
+% - synchronization: when communication happens
+% - 
+% needs a split of the process, by model or data and new limiting factors are network communications. 
+
+
+\subsubsection*{Communication Strategies}
+%% Parallelization strategies: data vs model parallelism, parameter servers, federated learning.
+
+While physical topologies are showing different ways of organizing and centralizing the connections of machines, logical topologies can be used to specify how the actual communication is practiced.  
+For this two main communication strategies a distinction between two new types of parallelization has to be made. They can either be synchronous, meaning all machines communicate at the same time collaboratively, or asynchronous, where each worker communicates as soon as it is finished with its own computation. Both are not applicable to every physical topology. Asynchronous communication is best suited for decentralized topologies with parameter servers. In that case workers push and pull parameters anytime necessary without the need for waiting for other workers to finish.
+Possible are also more varying approaches such as a trade-off version, called local \ac{SGD}, that allows workers to communicate asynchronous for a set amount of time until needing to synchronize \cite{verbraeken_survey_2020} or \ac{SSP}, which additionally allows for cached parameters to be used for synchronization for the set amount of time~\cite{tang_communication-efficient_2023}. 
+
+% 3. communication: topologies, collectives, synchronization (also system architectures such as gossip?)
+Depending on the parallelization strategies and split of the training process varying types of communication have to be performed. 
+While data parallelism relies on frequent exchange of calculated gradients, for example tensor parallelism, a type of model parallelism, needs to communicate between steps as early as in the forward pass \cite{dong_towards_2024}. % TODO explain forward pass bevore too
+
+%% Collectives
+Those types of communications can be achieved by using for example communication collectives. That are a set of synchronized communication patterns, which can be used for sharing and combining information across multiple machines in distributed systems, for instance \textit{All-Reduce}, \textit{All-to-All} or \textit{Reduce-Scatter}. 
+These collectives are most common for data parallelism, as they help to synchronize and combine gradients, and share parameters. They are blocking, meaning, nodes have to wait for each other's computation to finish, and they have to be orchestrated by a centralized controller.
+Generally, collectives can be separated into redistributive operations, that share data and consolidative operations, that aggregate data. 
+The most common collective used for data parallelism is \textit{All-Reduce}. In the following the approach of collectives is explained, based on \textit{All-Reduce} as an example. For guidance, figure \ref{fig:collectives} shows a visualization of the collective.
+The source for this explanation is the $25$th course lecture of UC Berkeley's course \textit{CS 168} in spring 2025 \cite{ratnasamy_collective_2025}.
+
+\begin{figure}[H]  % TODO make a better visualization maybe and make AllRecue to All-Reduce etc.
+  \centering
+  \includegraphics[width=0.9\linewidth]{collectives.png}
+  \caption{All-Reduce}
+  \label{fig:collectives}
+\end{figure}
+
+This collective can be used for $p$ nodes with each having a  $p$-sized vector of values. 
+This example uses $p = 4$, four nodes with each having four parameters that the model gets trained on. 
+Every node needs to know the number of $p$ and which index they have, meaning which parameter they are going to be responsible for. Also, this example uses a ring topology for easy visualization. The actual implementation can differ, in the following the theoretical background gets explained, more on that afterward.
+
+In every iteration, the communication starts when all workers, here called nodes, are finished with their computation. Every Node has their four parameters stored.
+The first step of the \textit{All-Reduce} is a \textit{Reduce-Scatter}, which itself involves two steps, a \textit{Scatter} and a \textit{Reduce}. \textit{Scatter} is the redistributive operation that shares every $i$-th parameter to the $i$-th node. With this, the first node receives all first parameters, the second all second ones and so on. 
+\textit{Reduce} is the consolidative operation, that combines the received set of parameters to one single aggregation.
+Together, they make every $i$-th node store one value in their $i$-th vector-place, combining the previous $i$-th values in every node's vector.
+
+The second step is an \textit{All-Gather}, which is an advanced version of \textit{Gather}. That is an operation that is the reverse of \textit{Scatter}, as it combines every $i$-th nodes $i$-th value in one vector. \textit{All-Gather} expands this by a \textit{Broadcast}, which is the reverse of \textit{Reduce} and distributes the resulting vector to all nodes.
+Afterward, the \textit{All-Reduce} is finished, and every node has a $p$-sized vector of the combined and shared values.
+
+The used operations can be implemented  on top of various topologies, which influences how efficient the operation performs. In figure \ref{fig:topologies-logical}, common logical topologies are visualized. They can be for example a \textit{Mesh}, \textit{Tree}, or \textit{Ring}.
+
+\begin{figure}[H]  % TODO make a visualization (that is wrongly the one for networks!)
+  \centering
+  \includegraphics[width=1\linewidth]{topologies-logical.png}
+  \caption{Logical Topologies}
+  \label{fig:topologies-logical}
+\end{figure}
+
+Depending on the underlying physical topology, different logical topologies can be useful for the different collectives, as different complexities of bandwidths are relevant. Also, overlay topologies can be used to create virtual links to support exchanging data between unconnected nodes. % TODO check
+
+
+% Depending on the type of communication and 
+% Another factor of \ac{DML} is the type of communication. 
+
+% Algorithm
+% While those topologies are showing different ways of centralization, they all more or less support synchronous as well as asynchronous communication. 
+
+% Topologies
+
+\subsubsection*{DML Characteristics}
+\ref{sec:discussion}
+% 4. Communication vs Computation, Parallelization strategy, extension ML to DML (maybe between section 1 and 2)
+
+%% Simulation relevance
+%%% Fault tolerance, heterogeneity, stragglers, energy efficiency
+%%% Algorithms vs infrastructure interplay
+%%% Simulation/benchmarking necessity (bridges into next section
+
+\section{Performance Modeling and Simulation Tools}
+% ASTRA-sim: 
+% 1. Grundkonzept
+% \begin{figure}[H]
+%     \centering
+%     \includegraphics[width=0.8\textwidth]{figures/astra_architecture.png}
+%     \caption{ASTRA-sim architecture overview}
+% \end{figure}
+
+% 2. Network
+% 3. System
+% 4. Workload
+% 5. 2.0 & more extensions
+
+% Weitere Tools: NS-3, MLPerf, SimGrid: Use cases & why it was not considered here
+% \begin{table}[H]
+%     \centering
+%     \caption{Feature comparison of simulation tools}
+%     \begin{tabular}{lccc}
+%         \toprule
+%         Tool      & Simulation Type & UI Support & Notable Features  \\
+%         \midrule
+%         ASTRA-sim & Network-level   & CLI only   & HPC-focused       \\
+%         SimGrid   & System-level    & Minimal UI & Flexible modeling \\
+%         NS-3      & Packet-level    & CLI/GUI    & Networking focus  \\
+%         MLPerf    & Benchmarking    & Web UI     & ML performance    \\
+%         \bottomrule
+%     \end{tabular}
+% \end{table}
+
+\section{User Interface Design for Scientific Tools}
+% Accessibility, UI patterns, visualization  ==> I HAVE TO DO LITERATURE REVIEW FIRST!!!!!
+% Human-Machine Interaction
+
+
+
+
+% TIPS VON CHATTI
+% Be selective: Don’t include everything—focus on what’s most relevant.
+% Synthesize, don’t summarize: Show connections, contradictions, and trends.
+% Use visuals: Diagrams, tables, or concept maps can clarify complex relationships.
+% End with a gap: Clearly state what’s missing in the literature and how your work fills it.

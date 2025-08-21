@@ -1,0 +1,491 @@
+Duale Hochschule
+Baden-Württemberg
+Stuttgart
+University of Cooperative Education
+Vorlesungsmanuskript
+Technische Dokumentation/
+Berichte
+Lehrbeauftragter
+Wolfgang Stark
+
+
+Wolfgang Stark
+wstark@lehre.dhbw-stuttgart.de
+
+Inhaltsverzeichnis
+Technische Dokumentation/Berichte Seite 2 von 15 April 2024
+Inhaltsverzeichnis
+1 Einführung ............................................................................................................................... 3
+1.1 Was ist eine Technische Dokumentation? ........................................................................ 3
+1.2 Was ist ein Technischer Bericht? ..................................................................................... 3
+2 Planen eines Technischen Berichts ......................................................................................... 4
+3 Erstellen eines Technischen Berichts ...................................................................................... 5
+3.1 Sprache und Struktur ........................................................................................................ 5
+3.1.1 Adressatengerecht ..................................................................................................... 5
+3.1.2 Aufgabengerecht ....................................................................................................... 5
+3.1.3 Sprachgerecht ............................................................................................................ 6
+3.1.4 Inhaltsgerecht ............................................................................................................ 6
+3.2 Schreib- und Dokumentationsregeln ................................................................................ 6
+3.2.1 Produkt-Glossar, Lexikon, Fachausdrücke ............................................................... 6
+3.2.2 Konsistent formulieren .............................................................................................. 6
+3.2.3 Zielgruppenorientiert formulieren ............................................................................. 6
+3.2.4 Ziel angeben .............................................................................................................. 7
+3.2.5 Nummerierte Listen für Reihenfolge ........................................................................ 7
+3.2.6 Abschnitte und Satzstruktur ...................................................................................... 7
+3.2.7 Positiv formulieren .................................................................................................... 7
+3.2.8 Aktiv statt passiv ....................................................................................................... 7
+3.2.9 Gründe für Bilder/Abbildungen ................................................................................ 8
+3.2.10 Stil der Abbildungen ................................................................................................. 8
+3.3 Was zeichnet nun einen „guten“ Bericht aus? .................................................................. 8
+4 Überprüfen eines Technischen Berichts .................................................................................. 9
+5 Wissenschaftliches Schreiben ............................................................................................... 10
+5.1 Anregungen zum Erstellen einer Arbeit ......................................................................... 10
+5.2 Wie löse ich mein Schreibproblem? ............................................................................... 11
+5.3 Verwendung von Literatur oder wie zitiere ich richtig. ................................................. 12
+5.4 Gliederung ...................................................................................................................... 14
+6 Literatur Links und Anhänge ................................................................................................ 15
+Nutzungshinweis:
+Diese Unterlagen dürfen ausschließlich von Mitgliedern
+(das sind Studierende und Bedienstete)
+der Dualen Hochschule Baden-Württemberg Stuttgart eingesetzt werden.
+Eine Weitergabe an andere Personen oder Institutionen ist untersagt.
+Kap. 1 - Einführung
+Technische Dokumentation/Berichte Seite 3 von 15 April 2024
+1 Einführung
+1.1 Was ist eine Technische Dokumentation?
+Unter einer Technischen Dokumentation versteht man die Aufbereitung und
+Veröffentlichung technischer Sachverhalte und Abläufe für eine der Zielgruppe und
+Zielsetzung entsprechend optimierten Form.
+Die Strukturierung der Information, die prägnante Formulierung von Texten, die Aufbereitung
+von visuellen Informationen und die Wahl des richtigen Mediums spielen dabei eine wichtige
+Rolle.
+Zu den Technischen Dokumentationen zählen:
+ Foto-Dokumentationen
+ Schaubilder
+ Technische Zeichnungen
+ Ton- und Video-Dokumentationen
+ Berichte in Textform wie z.B.
+ Prüfungsarbeiten jeglicher Art (Bachelorarbeiten, Praxisberichte…)
+ Technische Berichte
+ Protokolle
+ Lasten-/ Pflichtenheft
+ Spezifikationen
+ Benutzerhandbuch/Gebrauchsanweisungen
+ Service- und Reparaturhandbücher
+1.2 Was ist ein Technischer Bericht?
+Wie durch die Aufzählung in Kap.1.1 bereits aufgezeigt, gehören Technische Berichte zu den
+Technischen Dokumentationen und es gibt keinen prinzipiellen Unterschied. Die Definition
+lautet folgendermaßen:
+Der „Technische Bericht“ beschreibt einen technischen oder wissenschaftlichen
+Sachverhalt in einer technischen Fachsprache.
+Technische Berichte sind nachfolgend exemplarisch aufgeführte Dokumente, soweit in ihnen
+über technische Sachverhalte berichtet wird.
+ Laborberichte
+ Studienarbeiten
+ Praktikumsberichte
+ Bachelor-/Masterarbeiten
+ Doktorarbeiten
+ Artikel in Fachzeitschriften
+Da es sich bei den Aufgaben der Studenten in der Regel um technische Berichte handelt,
+betrachten wir nachfolgend nur diesen Teil einer Technischen Dokumentation.
+Kap. 2 - Planung
+Technische Dokumentation/Berichte Seite 4 von 15 April 2024
+2 Planen eines Technischen Berichts
+Technische Berichte müssen klar aufgebaut sein und erfordern daher ein hohes Maß an
+Systematik, Ordnung, Logik.
+Schon zu Beginn der Berichtserstellung müssen verschiedene Gesichtspunkte berücksichtigt
+werden, damit der Bericht später für den Leser auch verständlich ist.
+Bei Technischen Berichten muss, wie bei den Projektaufgaben, dieselbe Systematik für das
+Vorgehen verwendet werden. Es gelten deshalb die folgenden Arbeitsschritte:
+Planung, Realisation und Kontrolle des Technischen Berichts
+Für einen Technischen Bericht sind daher folgende Arbeitsschritte zu empfehlen:
+ Projektaufgabe entgegennehmen und analysieren
+- Was brauche ich für Informationen?
+- Kann ich die Aufgabe überhaupt in der vorgegebenen Zeit schaffen?
+- Wer sind meine Ansprechpartner?
+ Erarbeitung des Titels und der Beschreibung des Themas
+- Bereits hier zeigt sich, ob die Aufgabe verstanden wurde und die Beschreibung
+des Themas so formuliert werden kann, dass der Leser ohne Mühe die Aufgabe
+verstehen kann.
+ Gliederung erstellen und sukzessive verfeinern
+- Die Gliederung ist eine wichtige und zugleich kreative Aufgabe und sollte daher
+sehr sorgfältig durchgeführt werden. Wurde eine detaillierte Gliederung erstellt, ist
+das Füllen der einzelnen Kapitel nur noch eine „Fleißaufgabe“.
+ Formulieren, Schreiben und Erstellen des Technischen Berichts
+ Bericht kopieren, binden, verteilen
+Welche Fragen sind am Beginn einer Dokumentation wichtig?
+Zu Beginn jedes Technischen Berichts, muss sich der Student verschiedene Fragen stellen, deren
+Beantwortung einen wesentlichen Einfluss auf die Qualität des späteren Berichts hat.
+ Welches ist der Gegenstand der Dokumentation
+ Welcher Detaillierungsgrad ist erforderlich
+ Für welchen Personenkreis ist die Dokumentation bestimmt
+ Welche Form und Umfang sind anzuwenden
+ Welche Quellen kann ich verwenden
+ Welches Niveau muss die Dokumentation haben
+ Welche Kriterien werden für die Bewertung angelegt
+Kap. 3 - Erstellung des Berichts
+Technische Dokumentation/Berichte Seite 5 von 15 April 2024
+3 Erstellen eines Technischen Berichts
+3.1 Sprache und Struktur
+Der technische Bericht stellt eine besondere Textsorte dar. Er muss hohe Anforderungen an
+Verständlichkeit, Eindeutigkeit und Konsistenz erfüllen. Er muss Klarheit beim Leser
+hervorrufen und muss ohne Rückfrage verstanden werden.
+Ein „guter“ Bericht sollte daher folgende Attribute berücksichtigen:
+ Adressatengerecht - für wen wird der Bericht erstellt
+ Aufgabengerecht - für welchen Zweck
+ Formgerecht - in welcher Form (Blattsammlung, Protokoll…)
+ Inhaltsgerecht - für welche Aufgabe ist der Inhalt
+ Sprachgerecht - für welche Aufgabe und welchen Adressatenkreis
+ Umfangsgerecht - welche Komplexität, welcher Adressatenkreis
+3.1.1 Adressatengerecht
+Der Bericht muss für einen bestimmten Adressatenkreis ausgerichtet sein.
+Beispiele für Adressaten sind:
+ Benutzer
+ Entwickler
+ Qualitätskontrolle
+ Auftraggeber (Kunde)
+ Projektleiter
+ Projektmanager
+ Wartungs- u. Pflegepersonal
+ Vertrieb
+ Werbung
+ Prüfer
+3.1.2 Aufgabengerecht
+Der Bericht muss dem geforderten Zweck gerecht werden bzw. das angestrebte Ziel erfüllen.
+Beispiele für Aufgaben:
+ Testfälle für Abnahme des Projekts (für Auftraggeber, Entwickler, Qualitätskontrolle)
+ Projektführung und -überwachung (für Projektleiter, Projektmanager)
+ Entwicklungsinformationen (für Entwickler, Qualitätskontrolle)
+ Projektberichte, Studien- und Bachelorarbeiten als Prüfungsleistung
+Kap. 3 - Erstellung des Berichts
+Technische Dokumentation/Berichte Seite 6 von 15 April 2024
+3.1.3 Sprachgerecht
+Dies bedeutet, dass der Inhalt den Aufgaben und Adressaten angepasst formuliert dargeboten
+werden muss. Die Sprache muss dem Typ der Dokumentation angepasst sein. Ein
+Benutzerhandbuch kann eher umgangssprachlich formuliert sein. Ein Pflichtenheft, welches für
+einen Kunden erstellt wird, muss dagegen eine sehr formale Sprache enthalten, damit keine
+Missdeutungen entstehen können.
+Die Praxisberichte müssen sehr formal gehalten werden und sollten keine unnötigen sprachlichen
+Ausschmückungen enthalten.
+3.1.4 Inhaltsgerecht
+Der Inhalt einer Dokumentation muss den Aufgaben entsprechend gewählt werden. In einer
+Bedienungsanleitung zum Beispiel, die für den Endkunden erstellt wird, kann das Produkt als
+Black Box beschrieben werden. Dagegen ist eine Anleitung zur Wartung und Pflege eines
+Produkts, sehr detailliert, als White Box, zu beschreiben.
+Der Leser des Praxisberichts muss den Inhalt verstehen können, damit er eine Bewertung
+vornehmen kann. Der Bericht muss daher detailliert auf den Inhalt der Aufgabe eingehen.
+3.2 Schreib- und Dokumentationsregeln
+Nachfolgend sind einige wichtige Erkenntnisse für Technische Berichte festgehalten:
+ Schreibe zielgruppenorientiert.
+ Führe den Leser behutsam und mit ansteigendem Niveau in die technische Welt deines
+Berichts ein.
+ Beschreibe ausführlich das Ziel, die technischen Voraussetzungen und die Hintergründe
+der Aufgaben, wenn der Leser die Zusammenhänge verstehen soll.
+ Führe den Leser Schritt-für-Schritt an den komplexen Teil des Berichts heran.
+ Schreib es kurz und einfach und keine langatmigen und verklausulierten Sätze.
+3.2.1 Produkt-Glossar, Lexikon, Fachausdrücke
+ Der Bericht soll nur Fachausdrücke beinhalten, die entweder erklärt werden, oder Sie
+annehmen können, dass diese dem Leser vertraut sind.
+ Ein Glossar definieren
+ Rechtschreibung nach DUDEN prüfen, aber in jedem Fall die Rechtschreibprüfung des
+verwendeten Textprogramms einsetzen.
+ Die Begriffe sollen der Sprache der Leser angehören, nicht der des Schreibers.
+3.2.2 Konsistent formulieren
+ Für gleiche Zustände und Objekte immer dieselben Wörter und Begriffe verwenden.
+ Elegante Abwechslung, die den Satz lediglich interessanter wirken lassen soll, vermeiden.
+ Wenn für etwas Gleiches verschiedene Begriffe verwendet werden, könnte der Leser
+denken, dass etwas Verschiedenes gemeint ist.
+3.2.3 Zielgruppenorientiert formulieren
+ Überdenken, welche Terminologie der Leser (Prüfer, Kunde, Entwickler...) versteht und
+diese korrekt verwenden.
+ Beim Schreiben versuchen sich in die Zielgruppe hinein zu versetzen.
+Kap. 3 - Erstellung des Berichts
+Technische Dokumentation/Berichte Seite 7 von 15 April 2024
+3.2.4 Ziel angeben
+ Durch die Angabe eines Ziels entsteht beim Leser ein mentales Modell der Aufgabe. Dies
+unterstützt ihn dabei die Information des Berichts zu interpretieren und sich die einzelnen
+Schritte besser vorstellen zu können.
+3.2.5 Nummerierte Listen für Reihenfolge
+ Aktionen, die in strikter Reihenfolge durchzuführen sind, sollten als nummerierte Listen
+dargestellt werden.
+ Aktionen wiederum, welche nicht in strikter Reihenfolge durchzuführen sind, als
+unnummerierte Listen (z. B. mit Blickfangpunkten) anbieten.
+3.2.6 Abschnitte und Satzstruktur
+ Ein Abschnitt soll genau eine Idee transportieren.
+ Abschnitte sollen so kurz wie möglich sein.
+ Wenn für komplexe Zusammenhänge längere Absätze benötigt werden, ist es besser,
+diese in Listen oder Tabellen umzuorganisieren.
+ Der Übergang von einem Satz zum nächsten soll schlüssig sein, ebenso von einem Absatz
+zum nächsten.
+ Komplizierte grammatische Strukturen und lange Sätze sollten vermieden werden. Ein
+Leser, der einen Abschnitt dreimal lesen muss, verliert schnell das Interesse und hat den
+Sacherverhalt dann auch nicht verstanden.
+ Sätze sollen mit bekannter Information beginnen und von dort aus zu neuen
+Informationen und damit zu Erkenntnissen führen.
+3.2.7 Positiv formulieren
+ Wenn immer möglich, die Satzkonstruktion positiv formen.
+ Kein Satz soll mehr als eine Negation enthalten.
+3.2.8 Aktiv statt passiv
+Wenn immer möglich, aktiv formulieren.
+Schlechtes Beispiel:
+ Sind neue Daten im Formular eingegeben, muss die Datei zuerst gesichert werden.
+Besseres Beispiel:
+ Nachdem Sie neue Daten ins Formular eingegeben haben, müssen Sie die Datei zuerst
+durch drücken des Buttons „speichern“ sichern.
+Kap. 3 - Erstellung des Berichts
+Technische Dokumentation/Berichte Seite 8 von 15 April 2024
+3.2.9 Gründe für Bilder/Abbildungen
+Ein Leser blickt zumeist als erstes auf Bilder und deshalb sind diese ein geeignetes Hilfsmittel
+um die Aufmerksamkeit auf wichtige Informationen zu lenken. Bilder unterstützen auch das
+Erinnerungsvermögen und eignen sind besonders für:
+ Prozessbeschreibungen
+ Komplizierte technische Abläufe
+ Netze
+ Beziehungen
+ Hierarchien
+ Strukturen
+ Statistiken
+ Trends
+3.2.10 Stil der Abbildungen
+ Überflüssige Information und große Detailtreue vermeiden.
+ Den gewählten Stil der Abbildungen konsistent verwenden und gestalten.
+ Die ganze Abbildung soll auf einen Blick zu erfassen sein.
+ Texte in der Abbildung vermeiden. Referenzziffern verwenden und in der Legende
+definieren.
+ Für internationale Leser keine kulturabhängigen Bilder verwenden.
+3.3 Was zeichnet nun einen „guten“ Bericht aus?
+Es fällt sicherlich schwer, exakt fest zu machen, was denn nun den „guten“ Bericht auszeichnet.
+Es gibt aber sicherlich einige Kennzeichen, die darauf hindeuten und diese sind:
+ Gut und leicht lesbar
+ Auch für „Outsider“ verständlich
+ Kurz und knapp formuliert
+ Kein Aufsatzstil (Prosa)
+ Übersichtliche Gliederung und Struktur
+ Häufig Absätze verwendet
+ Wenn möglich, Zeichnungen und Tabellen verwendet
+ Inhalt und Struktur sind optimal passend zueinander
+ Formal und sachlich korrekt
+ Inhalt ist selbsterklärend
+ Objektiv
+Kap. 4 – Prüfung des Berichts
+Technische Dokumentation/Berichte Seite 9 von 15 April 2024
+4 Überprüfen eines Technischen Berichts
+Ist der Bericht erst einmal grob erstellt, geht es nun darum, ihn verschiedenen Prüfungen zu
+unterziehen, damit die sicher noch vorhandenen Mängel minimiert werden können. Die
+möglichen Mängel sind sehr vielfältig und daher müssen auch die Prüfungen vielfältig sein.
+Mit der nachfolgenden Aufzählung sollte das Problembewusstsein für mögliche Prüfungen des
+Berichts geweckt werden. Es sollte auf Folgendes geachtet werden.
+Bei der Sprache:
+ Nicht in Ich- oder Wir-Form schreiben
+ Einheitliche Zeiten verwenden
+ Unpassender Stil und Wortwahl
+ Keine ausschweifenden Erklärungen – kein Romanstil
+ Keine Umgangssprache verwenden (tun, Maschine runter fahren, …)
+ Ganze Sätze verwenden
+Beim Inhalt:
+ Ist ein roter Faden erkennbar
+ Sind eindeutige Quellenhinweise vorhanden
+ Glossar oder sonstige Erklärung für Abkürzungen vorhanden
+ Keine lange Fliestexte sondern durch Listen, Diagramme etc. aufgelockert
+ Keine komplizierte, oder umständliche Erklärungen und Formulierungen
+ Erläuterungen oder Legenden bei Abbildungen vorhanden
+Beim Äußeren (Form)
+ Formale Vorgaben, z.B. der DHBW einhalten
+ Schriftart nicht zu klein
+ Möglichst viele Absätze machen
+ Struktur oder Gliederung gut erkennbar
+ Wichtiges hervorgehoben
+ Kopf- und Fußzeile vorhanden
+ Inhalts- oder Abbildungsverzeichnis vorhanden
+ Keine leicht erkennbaren Rechtschreibfehler mehr vorhanden
+ Deckblatt
+Welche Methoden und Tools gibt es nun, den Bericht zu prüfen?
+ Eine Nacht darüber schlafen
+ Hilfsmittel wie z.B. Rechtschreibprüfung einsetzen
+ Nochmals gegen eventuell zuvor erstellte Kriterienliste überprüfen
+ Abgleich gegen formale Vorgaben (z.B. Bewertungskriterien) - sind alle Kriterien
+vorhanden.
+ Die Dokumentation selbst so lesen, als ob einem das Thema fremd ist
+ Ich gebe die Dokumentation einer Person, die das Thema nicht kennt, aber aus der IT
+stammt.
+ Korrektur durch jemanden der völlig fachfremd ist „Großmuttertest“.
+ Final Version nochmals von einer unabhängigen Person überprüfen lassen.
+Kap. 5 – Lösungen zu Übungen
+Technische Dokumentation/Berichte Seite 10 von 15 April 2024
+5 Wissenschaftliches Schreiben
+5.1 Anregungen zum Erstellen einer Arbeit
+Das Schreiben einer wissenschaftlichen Arbeit hat in erster Linie nichts mit Kreativität zu tun
+und sollte sich nicht im Darstellen schöner Screenshots erschöpfen. Vielmehr ist beim Schreiben
+einer wissenschaftlichen Arbeit klares analytisches Denken gefragt.
+Man sollte auch nicht dem Versuch erliegen, einen spannenden Roman aus seiner Arbeit zu
+machen und trotzdem sollte versucht werden, eine wissenschaftliche Arbeit leserfreundlich zu
+verfassen.
+Nachfolgend einige exemplarische Anregungen zum Erstellen einer solchen Arbeit:
+ Stellen Sie sich Fragen zum Ziel oder Ergebnis, wie z.B. was will ich mit dieser Arbeit
+erreichen.
+ Verwenden Sie „hochwertige“ Literatur. Dies bedeutet nicht nur im Internet auf
+zwielichtigen Seiten zu recherchieren, sondern auf Fachbücher und Fachartikel in
+wissenschaftlichen Zeitschriften zurückzugreifen.
+ Schaffen Sie eine theoretische Grundlage für Ihre Arbeit, auf die Sie dann im
+praktischen Teil aufsetzen können. Diese Grundlagen sind nicht nur ein isoliertes
+Kapitel in dem Sie der Pflicht nachkommen, sondern auf diese müssen Sie Ihren
+praktischen Teil logisch aufbauen. Führen Sie konsequent von der Theorie in die
+Praxis über.
+ Beginnen Sie mit der Gliederung und erstellen Sie eine logische, in sich konsistente
+Struktur für Ihre Arbeit, bevor Sie sich mit den Details beschäftigen.
+ Übernehmen Sie nicht Inhalte unreflektiert als Zusammenfassung in Ihre Arbeit,
+sondern setzen Sie sich mit der Theorie der verwendeten Literatur inhaltlicht
+auseinander.
+ Halten Sie sich streng an die formalen Vorgaben der Hochschule und interpretieren Sie
+diese nicht nach Ihren eigenen Vorstellungen. Diese haben eine wichtige Funktion, die
+sich Ihnen vielleicht nicht beim ersten Hinsehen gleich erschließt (z.B. Rand zum
+Anbringen von Korrekturen).
+ Arbeiten Sie bewusst mit Tabellen und Abbildungen um:
+ Ihre Arbeit aufzulockern.
+ Eine Zusammenfassung zu geben.
+ Den Leser bewusst auf bestimmte Aussagen aufmerksam zu machen.
+ Komplexe Zusammenhänge übersichtlich und verständlich darzustellen.
+Beachten Sie die Regel, dass die Qualität Ihrer Arbeit zum größten Teil vom Inhalt abhängt.
+Aber auch wenn Stil und Form der Arbeit nur einen geringeren Teil ausmachen, so sind diese
+doch wesentlich dafür verantwortlich, ob der Leser Ihre Botschaft versteht und den Inhalt
+nachvollziehen kann.
+Kap. 5 – Lösungen zu Übungen
+Technische Dokumentation/Berichte Seite 11 von 15 April 2024
+5.2 Wie löse ich mein Schreibproblem?
+Vor einem leeren Blatt zu sitzen und nicht zu wissen, wie ich anfangen soll ist zunächst nichts
+Ungewöhnliches. Wäre dies nicht so, könnte jedermann problemlos eine wissenschaftliche
+Arbeit verfassen. Was aber soll man nun tun gegen diese „Schreibblockade“?
+Hier wiederholen sich die Sätze, die im Skript schon an anderer Stelle erwähnt sind und doch ist
+es wichtig, sich diese nochmals vor Augen zu halten.
+ Stellen Sie die für Ihre Arbeit wichtigste Literatur zusammen.
+ Informationen sammeln, sondieren, sortieren und mit den eigenen Ideen verknüpfen.
+ Zum Ordnen Ihrer Gedanken indem Sie eine Strukturierungshilfe wie z.B. eine
+Mindmap verwenden.
+ Eine erste grobe Gliederung erstellen, die anfänglich noch sehr wage sein darf, im
+Verlauf der Vorbereitungen aber detaillierter werden muss.
+ Planen Sie die Abläufe des Projekts und die Erstellung der Arbeit sehr detailliert und
+passen Sie diese Planung bei Bedarf immer wieder an. Halten Sie sich aber auch an
+diese Planung.
+ Im Regelfall sollten Sie beim Schreiben chronologisch vorgehen. Kommen Sie aber an
+eine Stelle an der es absolut nicht weiter geht, so können Sie - sofern Ihre Gliederung
+bereits ausgearbeitet ist - zunächst an einer anderen Stelle der Arbeit weiterschreiben.
+Nachfolgend ein Beispiel für ein Vorgehen am Anfang der Arbeit.
+Der Titel der Arbeit lautet:
+ „Erstellung eines Überwachungstools für Datenbank-Cluster“
+Um den ersten Einstieg in die Arbeit zu finden könnten Sie z.B. folgende Fragen stellen:
+ Verstehen Sie das Thema: Lesen Sie das Thema und stellen Sie sicher, dass Sie es
+vollständig verstehen. Stellen Sie sicher, dass Sie wissen, was ein DatenbankCluster ist und was ein Überwachungstool ist. Wenn Sie Schwierigkeiten haben,
+das Thema zu verstehen, können Sie es mit Ihrem Betreuer besprechen oder online
+recherchieren.
+ Brainstorming: Schreiben Sie alle Ideen auf, die Ihnen zum Thema einfallen.
+Machen Sie sich keine Gedanken über die Reihenfolge oder ob sie sinnvoll sind.
+Schreiben Sie einfach alles auf, was Ihnen einfällt.
+ Strukturieren Sie Ihre Gedanken: Sobald Sie eine Liste von Ideen haben, ordnen
+Sie sie in einer sinnvollen Reihenfolge an. Sie können eine Mindmap oder eine
+Liste erstellen, um die Ideen zu organisieren und zu strukturieren.
+ Forschung: Lesen Sie alles, was Sie zum Thema finden können. Suchen Sie nach
+wissenschaftlichen Artikeln, Büchern und Online-Ressourcen. Versuchen Sie, Ihre
+Suche auf zuverlässige Quellen zu beschränken.
+Kap. 5 – Lösungen zu Übungen
+Technische Dokumentation/Berichte Seite 12 von 15 April 2024
+ Erstellen Sie eine Gliederung: Basierend auf Ihrer Forschung und Ihrer
+Strukturierung können Sie nun eine Gliederung erstellen. Die Gliederung sollte die
+Struktur Ihrer Arbeit widerspiegeln und alle Hauptpunkte abdecken.
+ Schreiben Sie einen Entwurf: Schreiben Sie nun einen ersten Entwurf Ihrer Arbeit.
+Versuchen Sie nicht, perfekt zu sein oder zu viel zu denken. Konzentrieren Sie sich
+einfach darauf, Ihre Gedanken auf Papier zu bringen.
+ ....
+5.3 Verwendung von Literatur oder wie zitiere ich richtig.
+Die Grundlage einer wissenschaftlichen Arbeit ist, dass jeder Leser in der Lage sein sollte Ihre
+verwendeten Befunde aus fremder Literatur nachzuprüfen. Dies bedeutet, dass alles was nicht
+Ihrem eigenen Gedankengut entspringt, mit einer Quelle belegt werden muss. Dazu ist zu
+beachten, dass nicht nur wörtlich übernommene Textstellen eindeutig gekennzeichnet werden
+müssen, sondern auch sinngemäß aus fremden Quellen übernommene Gedanken (vgl. Kornmaier
+2011, S.277).
+Mit wörtlichen Zitaten sollte sparsam umgegangen werden und Sie müssen prüfen, ob ein
+solches Zitat für Ihre Arbeit an dieser Stelle einen wirklichen Mehrwert darstellt. Auf jeden Fall
+sollten nur wenige Zeilen wörtlich zitiert werden.
+Zu der Art und Weise wie zitiert wird, gibt es verschiedene Möglichkeiten, von denen zwei hier
+exemplarisch aufgeführt sind.
+ Die deutsche Zitierweise mit Fußnoten (vgl. Richtlinien DHBW 2010, S.25ff.) am
+Ende des Textes, die auch von der DHBW so vorgeschrieben ist.
+ Die Harvard-Zitierweise (vgl. Kornmaier 2011, S.277), wie sie in diesem Skript
+Verwendung findet.
+Die Qualität der Arbeit wird durch die Qualität der verwendeten Literatur maßgeblich bestimmt.
+Im Wesentlichen sollten nachführend aufgeführte Literatur bzw. Recherchemöglichkeiten für
+eine wissenschaftliche Arbeit verwendet werden (siehe ausführliche Tabelle Kornmaier 2011,
+S.74).
+ Fachzeitschriften
+ Literatur aus Verweisen von Fachzeitschriften, Aufsätzen, Dissertationen…
+ Literaturdatenbanken
+ Rezensionen von Neuerscheinungen
+ Häufig zitierte Literatur als Basisliteratur für die Arbeit.
+Wozu kann das Internet als Informationsquelle verwendet werden?
+ Zur Suche und zur Auswertung von Quellenübersichten.
+ Zur Recherche in Onlinebibliotheken.
+ Zum Bezug von Informationen aus renommierten Quellen (Verlage,
+Fachzeitschriften).
+Kap. 5 – Lösungen zu Übungen
+Technische Dokumentation/Berichte Seite 13 von 15 April 2024
+Bei anderen Internetquellen ist es meistens jedoch nicht oder nur sehr schwer möglich die
+Informationen einer Qualitätskontrolle zu unterziehen.
+Zitate oder andere Informationen aus nicht überprüfbaren Quellen dürfen daher in einer
+wissenschaftlichen Arbeit nicht verwendet werden.
+Werden jedoch verlässliche Internetquellen verwendet, so muss folgendermaßen zitiert werden:
+Beispiel: ...näher Information entnehmen Sie bitte dem Bericht des Bundesministerium „(vgl.
+Bundesministerium für Familie, Senioren, Frauen und Jugend 2006)“.
+Im Literaturverzeichnis muss dann der gesamte Titel und der URL angegeben werden.
+Tätigkeiten
+Kap. 5 – Lösungen zu Übungen
+Technische Dokumentation/Berichte Seite 14 von 15 April 2024
+5.4 Gliederung
+Diese Tabelle enthält nur Beispiele und Anregungen für eine Gliederung. Sie erhebt keinen Anspruch auf
+Vollständigkeit.
+Vorspann Einleitung Aufgabenstellung Stand der Technik
+/ Technische
+Grundlagen
+Hauptteil Zusammenfas
+sung /
+Ausblick
+LiteraturVerweis Anhang
+Inhaltsverzeichnis Ausgangspunkt Ist-/Sollzustand Grundlagen Lösungsweg(e)
+Begründung
+Aufgabenstellung (kurz u.
+präzise)
+ Glossar
+Formeln und
+Einheiten
+Arbeit kurz
+umreisen
+Aufgaben
+präzisieren
+Verwendete Software Wesentliche
+Gedanken
+Vorgehensweise
+(kurz u. präzise)
+ Auszug aus
+Programm
+Abkürzungen Problemstellung Umfeld
+beschreiben
+Technische
+Voraussetzungen
+Vorversuche
+(nicht alle)
+Ergebnis (kurz u.
+präzise)
+ Ergänzungen
+(zusätzliche
+Infos)
+Abbildungen Randbedingungen Versuchsanordnung Ausblick
+Tabellenverzeichnis Umsetzung
+Ehrenworterklärung Ergebnis (ausführlich)
+ Erfahrungen
+Kap. 6 - Links und Anhänge
+Technische Dokumentation/Berichte Seite 15 von 15 April 2024
+6 Literatur Links und Anhänge
+Kornmeier, M. (2011): Wissenschaftlich schreiben leicht gemacht, 4. Aufl., Haupt Berne (UTB)
+o.V. (o. J): Übersicht der Dokumente der Fakultät Technik,
+http://studium.ba-bw.de/index.php?id=268
+o.V. (o. J): Bewertungsformular für Praxis- und Bachelorarbeiten, http://studium.babw.de/fileadmin/media/allgemein/bestimmungen/btechnik/Sep2010/Bewertung_Pra
+xis_Studien_Bachelorarbeit_2010_integriert.xls
+ 

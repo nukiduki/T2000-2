@@ -1,0 +1,657 @@
+DHBW Stuttgart
+Technische Dokumentation, technische Berichte
+und wissenschaftliches Schreiben
+April 2024Wolfgang Stark 2
+Technische Dokumentationen
+Agenda
+ Einstiegsfrage als Übung
+ Die Dokumentation als Kommunikation
+ Frage: warum wir überhaupt dokumentieren?
+ Was ist denn nun eine Dokumentation oder eine Bericht und was ist
+dabei zu beachten
+ Verständlich schreiben: Analyse der Beschreibung eines Praxisthemas
+ Richtlinien, Formales und wissenschaftliches Arbeiten
+ Bearbeiten eines konkreten Praxisberichts anhand verschiedener Fragen
+ Feedback und Abschluss
+ Fragen zu Ihrem Bericht
+April 2024Wolfgang Stark 3
+Technische Dokumentationen
+Zwischenmenschliche Kommunikation
+April 2024Wolfgang Stark 4
+Technische Dokumentationen
+Was ist ein Technischer Bericht?
+Der „Technische Bericht“ beschreibt einen technischen oder
+wissenschaftlichen Sachverhalt in einer technischen Fachsprache.
+Beispiele:
+ Laborberichte
+ Studienarbeiten
+ Praktikumsberichte
+ Bachelor-/Masterarbeiten
+ Doktorarbeiten
+ Artikel in Fachzeitschriften
+April 2024Wolfgang Stark 5
+Technischer Bericht
+Fragen zu Beginn des Berichts
+ Kann ich die Aufgabe überhaupt in der vorgegebenen Zeit schaffen?
+ Welches ist der Gegenstand der Dokumentation?
+ Welcher Detaillierungsgrad ist erforderlich?
+ Für welchen Personenkreis ist die Dokumentation bestimmt?
+ Welche Form und Umfang sind anzuwenden?
+ Welche Quellen kann ich verwenden?
+ Welches Niveau muss die Dokumentation haben?
+ Welche Kriterien werden für die Bewertung angelegt?
+April 2024Wolfgang Stark 6
+Technischer Bericht
+Planen eine Berichts
+Technische Berichte müssen klar aufgebaut sein und erfordern daher ein
+hohes Maß an Systematik, Ordnung, Logik.
+Bei Technischen Berichten muss, wie bei den Projektaufgaben, dieselbe
+Systematik für das Vorgehen verwendet werden.
+Planung, Realisation und Kontrolle des Technischen Berichts
+Folgende Arbeitsschritte sind zu empfehlen:
+ Projektaufgabe entgegen nehmen und analysieren.
+ Erarbeitung des Titels und der Beschreibung des Themas.
+ Informationen sammeln, sondieren, sortieren und mit den eigenen Ideen
+verknüpfen.
+ Gedanken mit einer Strukturierungshilfe wie z.B. eine Mindmap ordnen.
+ Gliederung erstellen und sukzessive verfeinern.
+ Formulieren, Schreiben und Erstellen des Technischen Berichts.
+ Bericht kopieren, binden und verteilen
+April 2024Wolfgang Stark 7
+Technischer Bericht
+Schreibregeln
+ Schreibe zielgruppenorientiert.
+ Führe den Leser behutsam und mit ansteigendem Niveau
+in die technische Welt deiner Dokumentation ein.
+ Beschreibe ausführlich das Ziel, die technischen Voraussetzungen und
+die Hintergründe der Aufgaben, wenn der Leser die Zusammenhänge
+verstehen soll.
+ Führe den Leser Schritt-für-Schritt an den komplexen Teil der
+Dokumentation heran.
+ Schreib es kurz und einfach und keine langatmigen und
+verklausulierten Sätze.
+April 2024Wolfgang Stark 8
+Technischer Bericht
+Schreibregeln
+ Begeben Sie sich als Ersteller gedanklich in die Position des späteren
+Lesers, der zwar technisches Grundwissen besitzt, aber keine
+Detailkenntnisse des im Bericht beschriebenen Projektes. Dieser fiktive
+Leser sollte Ihren Technischen Bericht ohne Rückfragen verstehen
+können!
+Es muss immer klar ersichtlich sein, wie etwas entstanden ist
+und in jeder Hinsicht muss es für den Leser nachvollziehbar
+sein.
+April 2024Wolfgang Stark 9
+Technischer Bericht
+Erste Überprüfung eines technischen Berichts
+ Mit dem „In die Hand Nehmen“ eines schriftlichen Berichtes können
+verschiedene Sichtprüfungen durchgeführt werden:
+• Ist er sauber geheftet?
+• Ist ein neuer Hefter oder Ordner verwendet worden?
+• Gibt es ein aussagefähiges Titelblatt?
+• Gibt der Titel ausreichende und sachgerechte Information über
+den Inhalt des Technischen Berichts?
+ Bei der inhaltlichen Prüfung tritt die Frage auf:
+• Ist ein Inhaltsverzeichnis vorhanden?
+• Ist das Inhaltsverzeichnis logisch gegliedert bzw. ist der „rote
+Faden“ erkennbar?
+• Sind Literaturquellen angegeben und existiert ein
+Literaturverzeichnis?
+April 2024Wolfgang Stark 10
+Technischer Bericht
+Analysieren der Verständlichkeit der Beschreibung eines
+Praxisthemas
+ Lesen Sie die nachfolgende Beschreibung sorgfältig durch und notieren
+Sie für sich, was Sie verstanden haben.
+- Was ist das Problem?
+- Was soll in der Arbeit getan werden und was soll der Student machen
+- Was ist nach Durchführung der Praxisarbeit anders?
+ Besprechen Sie mit Ihrem Nachbarn was er verstanden hat und tauschen
+Sie sich aus.
+ Diskutieren Sie woraus die eventuelle vorhanden unterschiedlichen
+Sichten der Beschreibung resultieren.
+April 2024Wolfgang Stark 11
+Technischer Bericht
+Beispiele für die Beschreibungen eines Praxisthemas
+Thema: Aras Innovator Demo-Cloud
+Kurzbeschreibung:
+Ziel des Projekts ist es, ein System bereit zu stellen auf dem Anwender, nach
+Registrierung, einen zeitlich begrenzten Testzugang auf ein ARAS Innovator PLM
+System erhalten.
+Für dieses System wird zum einen, eine Datenbank zur Administration, sowie eine
+Template-Instanz des Demosystems benötigt. Nach Registrierung, über eine Website,
+wird der Nutzer in der Admin Datenbank gespeichert und eine neue Instanz des
+Demosystems für ihn angelegt. Danach erhält der Nutzer eine E-Mail mit seinen
+Zugangsdaten und einer Anleitung. Mit diesen Daten kann er sich nun auf der Website
+einloggen und erhält Zugriff auf sein Demosystem.
+Der Testzugang bleibt zwei Wochen bestehen, danach wird er deaktiviert.
+Aufgabe ist der Entwurf und die Implementierung eines Systems zur Umsetzung dieser
+Anforderungen.
+April 2024Wolfgang Stark 12
+Technischer Bericht
+Beispiele für die Beschreibungen eines Praxisthemas
+Thema: Entwickeln eines Systems zur Demonstration eines T-Systems Produkts
+Kurzbeschreibung:
+Der Bereich PLM Solutions erstellt Lösungen für verschiedene Kunden auf Basis eines bestehendes
+Datenmanagementsystems.
+Derzeit erfolgt eine Kundenpräsentation nur über die Vorführung des Produkts, was zum einen die Zeit
+eines Mitarbeiters beansprucht und zum anderen das Interesse des Kunden nicht immer im gewünschten
+Umfang weckt.
+Ziel ist es daher dem Kunden, innerhalb von kurzer Zeit, eine Umgebung zur Verfügung zu stellen in der
+er, mit schriftlicher Anleitung, die Möglichkeiten des Produkts selbst erleben und ausprobieren kann.
+Hierfür wird, zunächst für das Produkt „Aras Innovator“, eine Demoumgebung erstellt werden, welche alle
+Funktionen des Produkts beinhaltet, aber lediglich Demo-Datensätze enthält.
+Um die Nutzung zu erleichtern und die Bereitstellungszeit zu verkürzen, sollen sich die Interessenten
+direkt über das Internet registrieren können und erhalten anschließend automatisch eine E-Mail mit einer
+Anleitung wie sie auf ihre Demoumgebung zugreifen können.
+Aufgabe der Praxisarbeit ist der Entwurf und die Implementierung folgender Bestandteile:
+• Website zur Registrierung
+• Automatisches Neuanlegen eines Demosystems
+• Nutzerverwaltung
+• Versenden von E-Mails
+April 2024Wolfgang Stark 13
+Technischer Bericht
+Übersicht über Berichte und Arbeiten
+https://studium.dhbw-stuttgart.de/informatik/studienbetrieb/praxisphasen-berichte/t2000-praxis-ii/
+April 2024Wolfgang Stark 14
+Technischer Bericht
+Gestaltung der inhaltlichen Abschnitte/Kapitel
+Einleitung
+Die Einleitung soll den Ausgangspunkt der Arbeit umreißen, in kurzer Form zur
+Problemstellung hinführen und das Interesse des Lesers für die Arbeit wecken.
+Aufgabenstellung
+Die Fragestellung der Aufgabe ist zu präzisieren. Insbesondere sind das Umfeld,
+die vorhandenen Randbedingungen und Betrachtungsgrenzen darzustellen.
+Stand der Technik
+Ausgehend von der Aufgabenstellung ist der derzeitige Stand der Technik für die
+Lösungsfindung zu beschreiben. Es sind z. B. die Vor- und Nachteile bisheriger
+Lösungen bzw. fundamentaler Lösungsprinzipien anhand der Literatur darzulegen.
+In jede wissenschaftliche Arbeit muss
+das bisher vorhandene Wissen
+bezogen auf das Thema der Arbeit
+dargestellt werden. (Zitat aus H.Balzert –
+Wissenschaftliches Arbeiten)
+April 2024Wolfgang Stark 15
+Technischer Bericht
+Gestaltung der inhaltlichen Abschnitte/Kapitel
+Hauptteil
+ Der Text soll knapp und klar sein und die wesentlichen Gedanken der Arbeit
+beinhalten.
+ Ein gewähltes Verfahren oder ein bestimmter Lösungsweg müssen begründet
+werden.
+ Es ist nicht notwendig, alle Vorversuche einzeln zu schildern.
+ Die Ergebnisse der Arbeit sind unter Berücksichtigung der Voraussetzungen
+ausführlich zu diskutieren und mit den bereits bekannten Anschauungen und
+Erfahrungen zu vergleichen.
+Zusammenfassung
+Aufgabenstellung, Vorgehensweise und wesentliche Ergebnisse werden
+kurz und präzise dargestellt.
+Anhang
+Tabellenverzeichnis, Abbildungsverzeichnis, Glossar, Auszug aus Programmen,
+Ergänzende Informationen, Literaturverzeichnis
+April 2024Wolfgang Stark 16
+Technischer Bericht
+Aufteilung des Umfangs auf die einzelnen Teile
+Hauptteil (60 – 80%)
+incl. wissenschaftlicher Teil / Stand der Technik
+Einleitung (10 - 20%)
+incl. Aufgabenstellung
+Schluss (10- 20%)
+mit Zusammenfassung
+April 2024Wolfgang Stark 17
+Technischer Bericht
+Gestaltung der inhaltlichen Abschnitte/Kapitel
+Die Informationen, mit denen Sie Ihren Bericht füllen, werden im Prinzip
+nur noch in die Schubladen einsortiert, welche die Gliederung festlegt.
+Die Erstellung der Gliederung ist damit die eigentliche kreative Arbeit.
+Das spätere Ausformulieren des Textes ist dann nur noch „Handwerk“,
+was allerdings auch entsprechende Routine erfordert.
+April 2024Wolfgang Stark 18
+Technischer Bericht
+Lösen von Schreibblockaden
+Ein Beispiel für ein Vorgehen am Anfang der Arbeit.
+Der Titel der Arbeit lautet: „Erstellung eines
+Überwachungstools für Datenbank-Cluster“
+Um den ersten Einstieg in die Arbeit zu finden
+könnten Sie z.B. folgende Fragen stellen:
+ Was genau versteht man unter DB-Cluster?
+ Was ist der derzeitige Stand bei der Überwachung
+von Clustern (Literatur sammeln)?
+ Gibt es zu meiner Problemstellung bei den DBHerstellern bereits Unterstützung?
+ Gibt es bereits Tools auf dem Markt, die mein
+Problem lösen könnten?
+ Was gibt es eventuell bereits bei uns in der Firma an
+Information zu diesem Thema?
+April 2024Wolfgang Stark 19
+Technischer Bericht
+Wissen to go
+Faktoren für einen qualitativ hochwertigen Bericht (wissenschaftliche Arbeit):  Das Ziel bewusst machen
+ Thema der Arbeit
+ Umfang der Arbeit
+ Abgrenzung der Arbeit  Selbstorganisation
+ Zeitplan erstellen
+ An den Zeitplan halten  Projektorganisation
+ Anforderungen der Betreuer kennen
+ Ressourcen für Projekt beachten
+April 2024Wolfgang Stark 20
+Wissenschaft,
+Ethik,
+Forschung
+Wissenschaftl
+iche Arbeiten
+Wissenschaftl
+iches
+Arbeiten
+Projektmanagement
+Die
+Präsentation
+II.
+April 2024Wolfgang Stark 21
+© W3L GmbH 2011
+Wissenschaftliches Arbeiten
+Unterschiede zwischen wissenschaftlichen Arbeiten
+April 2024Wolfgang Stark 22
+© W3L GmbH 2011
+Wissenschaftliches Arbeiten
+Typen wissenschaftlicher Arbeiten
+Unterschiede im inhaltlichen Aufbau
+Literaturarbeit
+Empirische Arbeit
+Konstruktive Arbeit
+Theoretische Arbeit
+April 2024Wolfgang Stark 23
+Wissenschaftliches Arbeiten
+Titel von Abschlussarbeiten
+„Die Vogelgemeinschaft des
+Großen Tiergartens in
+Berlin“
+„Gewerbemüllaufkommen
+im Landkreis Bergstraße“
+„Integration unbegleiteter
+minderjähriger
+Flüchtlinge“
+„Das soziale
+Sicherungssystem in
+Griechenland“
+„Häuser und Mobiliar in
+einem westfälischen Dorf“
+Quelle: https://www.welt.de/kultur/article150659102/Nichts-liest-sich-lustiger-als-die-Uni-Abschlussarbeit.html
+April 2024Wolfgang Stark 24
+Technischer Bericht
+Quellennachweis und Zitierweise
+ Die Notwendigkeit, Quellen zu zitieren, ergibt sich aus
+dem Qualitätsanspruch wissenschaftlichen Arbeitens
+und aus dem Urheberrechtsgesetz.
+Generell wird angenommen, dass der gesamte Text,
+alle Abbildungen und Tabellen eigene Gedanken des
+Verfassers sind, wenn sie nicht als fremdes
+Gedankengut kenntlich gemacht wurden.
+ Zitiert werden muss jedes fremde Gedankengut aus
+wissenschaftlich anerkannter Literatur
+(wissenschaftliche Bücher, höherwertige Lehrbücher,
+Handbücher, Lexika, Aufsätze in wissenschaftlichen
+Zeitschriften, wichtige Zeitungsartikel …..)
+April 2024Wolfgang Stark 25
+Technischer Bericht
+Quellennachweis und Zitierweise
+ Es wird in wissenschaftlichen Arbeiten ausdrücklich
+gewünscht, auf fremdem Gedankengut aufzubauen
+und bereits existierende Erkenntnisse zu verwenden.
+Daraus ergibt sich aber auch der Anspruch, die
+Quellen nicht unreflektiert zu übernehmen,
+sondern im Rahmen der Arbeit zu diskutieren.
+Was muss NICHT zitiert werden?
+„Nicht zitiert werden muss in einer wissenschaftlichen Arbeit
+darüber hinaus solches Allgemeinwissen, welches aus jedem
+Konversationslexikon entnommen werden kann; dies gilt auch
+für einschlägige Fachausdrücke und allgemeine Begriffe aus
+Fachlexikas sowie einfache mathematische Formeln“
+April 2024Wolfgang Stark 26
+Technischer Bericht
+Quellennachweis und Zitierweise
+ Wozu kann das Internet als Informationsquelle
+verwendet werden?
+• Zur Suche und zur Auswertung von
+Quellenübersichten.
+• Zur Recherche in Onlinebibliotheken.
+• Zum Bezug von Informationen aus
+renommierten Quellen (Verlage, Fachzeitschriften).
+April 2024Wolfgang Stark 27
+Technischer Bericht
+Quellennachweis und Zitierweise
+ Wann darf das Internet nicht als Informationsquelle
+dienen?
+Bei Internetquellen bei denen eine Qualitätskontrolle der
+Information nicht, oder nur sehr schwer möglich ist, dürfen
+Zitate oder andere Informationen in einer
+wissenschaftlichen Arbeit nicht verwendet werden.
+Auch bei „ seriösen“ Links besteht keine Gewähr auf
+späteren Zugriff und daher sollte der Link wie nachfolgend
+aufgeführt angegeben, oder das Dokument der Arbeit
+beigelegt werden (Anhang).
+???????
+URL:
+Mustermann, Manfred/Neumann, Norbert: Spamfighting:
+Vom einsamen Kampf gegen die E-Mail-Flut, 12.02.2005,
+http://www.servername.com/mustermann/blog/
+2005_02_12.html (14.07.2011, 12:34)
+DOI-Link:
+http://dx.doi.org/10.1007/s002870050051
+April 2024Wolfgang Stark 28
+Wissenschaftliches Arbeiten
+Zitierfähig und zitierwürdig
+Zitierfähigkeit
+ Die Quelle muss veröffentlicht sein - das Dokument muss der
+Öffentlichkeit zugänglich gemacht worden sein (z. B. Publikation
+durch einen Verlag).
+ Die Quelle muss nachvollziehbar sein - das Dokument muss
+eindeutig identifizierbar sein (erfolgt z.B. durch die Angabe von
+Autor, Titel, Verlag, Ort etc.).
+ Das Material muss kontrollierbar sein - der zitierte Inhalt muss
+leicht überprüfbar sein (z. B. durch eine exakte Seitenangabe).
+Auch URL‘s müssen noch vorhanden und kontrollierbar sein.
+April 2024Wolfgang Stark 29
+Wissenschaftliches Arbeiten
+Zitierfähig und zitierwürdig
+Zitierwürdigkeit
+Bei der Zitierwürdigkeit geht es um die wissenschaftliche
+Verwertbarkeit von Quellen.
+Die Entscheidung, ob eine Quelle zitierwürdig ist, ergibt sich aus der
+jeweiligen Zielgruppe der Quelle.
+Wissenschaftliche Literatur (Zielgruppe ist Forschung und Lehre)
+erfüllt die Anforderungen der Zitierwürdigkeit.
+Nicht wissenschaftliche Literatur (z. B. Tageszeitungen, nicht
+wissenschaftliche Fachzeitschriften) sind im Grundsatz dazu nicht
+zitierwürdig. Allerdings sind Ausnahmen möglich. Wenn es
+beispielsweise zu bestimmten Fragestellungen überhaupt keine
+wissenschaftlichen Publikationen gibt, können in der Regel andere,
+sachorientierte Quellen, herangezogen werden. Dies sollte aber
+auch mit dem Betreuer abgestimmt werden.
+Populärwissenschaftliche Literatur findet bei wissenschaftlichen
+Arbeiten keine Beachtung.
+April 2024Wolfgang Stark 30
+© W3L GmbH 2011
+Wissenschaftliches Arbeiten
+Quellen zitieren
+Zitieren fremder Quellen
+ Direktes Zitat
+ Indirektes Zitat (Paraphrase)
+ Sekundäres Zitat
+ Auf Quellen verweisen
+ Seitenangaben (Regeln)
+ Passim.«
+ Grafiken, Tabellen, Fotos
+Kurzzitierweisen
+(Verweis auf das
+Literaturverzeichnis)
+ Klassische HarvardZitierweise (z.B. vgl.
+Mustermann 2007b, S. 154
+f.).
+ Modifizierte HarvardZitierweise (mit
+Fußnoten)
+ Kurzzitierweise mit
+Namenskürzel
+([Must05])
+ Kurzzitierweise mit
+numerischem Index
+([3])
+April 2024Wolfgang Stark 31
+© W3L GmbH 2011
+Wissenschaftliches Arbeiten
+Direktes Zitat
+“Die Informationstechnik ist einem stetigen Wandel unterworfen, [...]
+ungünstiger weise bedeutet dies, dass man sich eigentlich niemals
+auf seine hart erworbenen Kenntnisse verlassen darf.“
+[Must07, S.154]
+April 2024Wolfgang Stark 32
+Wissenschaftliches Arbeiten
+Beispiele für Zitierweisen
+Nachfolgende Zitierweisen sind Beispiele für verschiedene Möglichkeiten zu
+zitieren (Indirekte Zitierweise).
+1. Bereits Mustermann verwies auf den stetigen Wandel der Informationstechnik und die
+damit verbundene Unzuverlässigkeit erworbener Kenntnisse23. ____________ 23 Vgl. Mustermann (2007), Seite 154
+2. Bereits Mustermann verwies auf den stetigen Wandel der Informationstechnik und die
+damit verbundene Unzuverlässigkeit erworbener Kenntnisse (vgl. Mustermann (2007),
+S. 154)
+3. Bereits Mustermann verwies auf den stetigen Wandel der Informationstechnik und die
+damit verbundene Unzuverlässigkeit erworbener Kenntnisse (vgl. [Must07, S. 154f])
+(Von der DHBW-Informatik gewünschte Zitierweise)
+4. Bereits Mustermann verwies auf den stetigen Wandel der Informationstechnik und die
+damit verbundene Unzuverlässigkeit erworbener Kenntnisse (vgl. [3, S. 154ff])
+(Von der DHBW-Informatik gewünschte Zitierweise)
+April 2024Wolfgang Stark 33
+© W3L GmbH 2011
+Wissenschaftliches Arbeiten
+Einträge im Literaturverzeichnis
+Die nachfolgend aufgeführten Beispiele für Einträge im
+Literaturverzeichnis sind abhängig von der im Text verwendeten
+Zitierweise.
+Mustermann (2007)
+Mustermann, Manfred: Grundlagen der Informationstechnik:
+Eine Einführung für Studenten der Wirtschaftsinformatik, 6.
+Auflage, Musterverlag, München 2007
+[Must07]
+Mustermann, Manfred: Grundlagen der Informationstechnik:
+Eine Einführung für Studenten der Wirtschaftsinformatik, 6.
+Auflage, Musterverlag, München 2007
+[3]
+Mustermann, Manfred: Grundlagen der Informationstechnik:
+Eine Einführung für Studenten der Wirtschaftsinformatik, 6.
+Auflage, Musterverlag, München 2007
+Wolfgang Stark April 2024 34
+Wissenschaftliches Arbeiten
+Zusammenfassung Zitierformen
+Zitierformen
+Direkte Zitate Indirekte Zitate
+Nur sparsam verwenden
+Wenn der Autor etwas in besonders guten Worten sagt
+Wenn ich genau dies zeigen/sagen möchte
+Zuviel direkte Zitate lassen an der Eigenständigkeit
+der Arbeit zweifeln
+Text muss wortgleich übernommen und in Anführungszeichen gesetzt werden
+Das Gelesene in eigenen Worten
+zusammenfassen (paraphrasieren)
+Vgl. Autor (Jahr),Seite xy
+Zusammenfassung mehrerer Seiten
+möglich
+Nur Fazit und Verweis auf das Werk
+erlaubt
+Vollbeleg Kurzbeleg
+Alle bibliographischen
+Daten
+Nur in Fußzeile
+Wenn kein Literaturverz.
+Autor
+Erscheinungsjahr
+Zitatstelle
+Vollst. Infos im Literaturverz.
+In Fußzeile Im Text Fußnoten auf jeder Seite neu oder
+durchlaufend
+Quellangabe direkt
+im Text (DHBW)
+April 2024Wolfgang Stark 35
+Relevanz
+Logische
+Argumentation
+Wissenschaftliche
+Qualitätskriterien
+Objektivität
+Ehrlichkeit
+Nachvollziehbarkeit
+Fairness
+Verantwortung
+Originalität
+Verständlichkeit
+Überprüfbarkeit
+Reliabilität
+Validität
+© W3L GmbH 2011
+Wissenschaftliches Arbeiten
+Qualitätskriterien
+April 2024Wolfgang Stark 36
+Objektivität beschreibt den Grad der
+Unabhängigkeit der gewonnenen Ergebnisse
+ vom Beobachter/Interviewer und
+Ersteller einer wissenschaftlichen Arbeit.
+ vom Auswerter/Gutachter.
+Objektivität erfordert
+ unvoreingenommenes wissenschaftliches Vorgehen.
+ Selbstkontrolle.
+ eine sachliche Argumentation und die neutrale, vorurteilsfreie
+Darstellung der gewonnenen Ergebnisse.
+© W3L GmbH 2011
+Wissenschaftliches Arbeiten
+Objektivität
+April 2024Wolfgang Stark 37
+ Kontrollfragen
+für wissenschaftliche Arbeiten:
+ Sind die Ausführungen vorurteilsfrei?
+ Entspricht die sprachliche Aufbereitung
+dem wissenschaftlichen Schreibstil?
+ Kommen die Ergebnisse unabhängig von der Person,
+welche die Daten erhoben hat, zustande (sodass andere Personen zu den
+gleichen Ergebnissen kommen)?
+ Werden die Ergebnisse von unterschiedlichen
+Gutachtern gleich beurteilt?
+Wissenschaftliches Arbeiten
+Objektivität
+© W3L GmbH 2011
+April 2024Wolfgang Stark 38
+ Überprüfungen und Kritik
+ermöglichen Fehlerkorrekturen.
+ Überprüfungen, die mit Änderungen und
+Verbesserungen einhergehen, führen
+schrittweise zu hochwertigen Lösungen.
+ Wissenschaftliche Theorien müssen daher
+an der Erfahrung scheitern können:
+ Falsche Aussagen werden widerlegt (falsifiziert).
+Was nicht falsifizierbar und keiner Kritik zugänglich ist,
+hat keine wissenschaftliche Relevanz.
+ Richtige Aussagen werden bestätigt (verifiziert).
+Was verifiziert werden kann, gilt als „vorläufig gesichert“.
+Wissenschaftliches Arbeiten
+Überprüfbarkeit
+© W3L GmbH 2011
+April 2024Wolfgang Stark 39
+ Kontrollfragen
+für wissenschaftliche Arbeiten:
+ Wird das Vorgehen verständlich
+und überprüfbar dargestellt?
+ Werden die Behauptungen belegt?
+ Sind die Quellenangaben vollständig?
+ Sind die Ergebnisse überprüfbar?
+ Ist es möglich, die Aussagen zu widerlegen?
+ Ist es möglich, die Aussagen zu bestätigen?
+Wissenschaftliches Arbeiten
+Überprüfbarkeit
+© W3L GmbH 2011
+April 2024Wolfgang Stark 40
+ Klare, präzise Sprache
+ Definition relevanter Begriffe
+ Gliederung der Inhalte
+ Gut strukturierte Darstellungen (in Bild und Text), reduziert auf
+das Wesentliche
+ Übersichtliches Layout
+ Vorhandensein aller wichtigen Bestandteile
+ Unterstützung schwieriger Textinhalte durch
+Grafiken, Fotos und weitere Visualisierungen
+Wissenschaftliches Arbeiten
+Verständlichkeit
+© W3L GmbH 2011
+April 2024Wolfgang Stark 41
+ Kontrollfragen
+für wissenschaftliche Arbeiten:
+ Sind alle wichtigen Bestandteile vorhanden?
+ Ist der formale Aufbau der Arbeit klar und übersichtlich?
+ Entsprechen die Typografie und das Seitenlayout
+den vorgegebenen Gestaltungsregeln?
+ Erleichtert die sprachliche Darstellung das Verstehen?
+ Gibt es Wahrnehmungshilfen (Schaubilder, Fotos usw.)
+für spezielle und komplexe Inhalte?
+© W3L GmbH 2011
+Wissenschaftliches Arbeiten
+Verständlichkeit
+April 2024Wolfgang Stark 42
+ Die Inhalte wissenschaftlicher
+Arbeiten werden nachvollziehbar,
+indem Qualitätskriterien erfüllt werden:
+ Inhalte mit hohem Informationsgehalt
+ Sachliche, objektive Beschreibungen
+ Verständliche Strukturierung und Darstellung der Inhalte
+ Überprüfbare Aussagen und Ergebnisse
+ Fehlerfrei arbeitende Messinstrumente
+ Angemessene Fragestellungen, richtige Gültigkeitsbereiche,
+ausreichend große und repräsentative Stichproben
+ Begründete Aussagen, widerspruchsfreie Argumentation
+und logisch einwandfreie Schlussfolgerungen
+© W3L GmbH 2011
+Wissenschaftliches Arbeiten
+Nachvollziehbarkeit
+April 2024Wolfgang Stark 43
+ Kontrollfragen
+für wissenschaftliche Arbeiten:
+ Sind die Inhalte verständlich?
+ Werden wichtige Aussagen bildlich unterstützt?
+ Haben die Inhalte einen ausreichenden Informationsgehalt?
+ Sind die Aussagen überprüfbar?
+ Sind die Messungen wiederholbar und stabil?
+ Ist die Vorgehensweise zweckmäßig und folgerichtig?
+ Ist die logische Argumentation nachvollziehbar,
+und sind die Schlussfolgerungen richtig?
+© W3L GmbH 2011
+Wissenschaftliches Arbeiten
+Nachvollziehbarkeit
+April 2024Wolfgang Stark 44
+Wissenschaftliches Arbeiten
+Maßnahmen zur Qualitätssicherung
+Wie bei jedem Projekt  Erst Planen dann
+durchführen  Mit den Vorgaben
+vertraut machen  Regelmäßige
+Absprache mit den
+Stakeholdern
+Quelle: Axel Bänsch und Dorothea Alewell. Wissenschaftliches Arbeiten. 11.
+aktual. und erw. Aufl., 2013
+April 2024Wolfgang Stark 45
+Wissenschaftliches Arbeiten
+Maßnahmen zur Qualitätssicherung
+April 2024Wolfgang Stark 46
+Wissenschaftliches Arbeiten
+Maßnahmen zur Qualitätssicherung
+ Defitiv Messbar  Physisch  Eindeutig
+Quelle: DHBW Stuttgart Fakultät Technik Bewertungsbogen für Praxis III
+ Bewertend Messbar  Abhängig von
+Bewertendem  Kann Summe definitiv
+messbarer Kriterien sein
+Quelle: https://openclipart.org/detail/26865/scales
+April 2024Wolfgang Stark 47
+Wissenschaftliches Arbeiten
+Ist Qualität messbar?
+Definitiv Messbar Bewertend Messbar
+Richtige Zitation Titel der Arbeit
+Dokumentenstruktur vollständig Adequate Literaturauswahl und
+Zitation
+Richtlinien zur Formatierung
+eingehalten
+Nachvollziehbare Argumentation
+Sprachregeln Adequate Sprache
+Zeitrahmen eingehalten Zur verfügung stehende Zeit sinnvoll
+genutzt
+April 2024Wolfgang Stark 48
+© W3L GmbH 2011
+Wissenschaftliches Arbeiten
+Wissenschaftlich und zielgruppenorientiert schreiben
+April 2024Wolfgang Stark 49
+© W3L GmbH 2011
+Wissenschaftliches Arbeiten
+Handwerkzeug für das wissenschaftliche Arbeiten
+Zum wissenschaftlichen „Handwerkszeug“
+gehören ein Computer und die entsprechende
+Software. Besonders hilfreich sind:
+1. Literaturverwaltungssysteme
+2. Mindmap-Programme
+3. Software für die Aufgaben- und Projektplanung
+4. Software für die Texterfassung und die Einbindung
+von Grafiken, Bildern und Bildschirmabzügen
+April 2024Wolfgang Stark 50
+Ende der Vorlesung
+Vielen Dank für Ihre Aufmerksamkeit

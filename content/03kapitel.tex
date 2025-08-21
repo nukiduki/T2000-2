@@ -1,0 +1,43 @@
+%!TEX root = ../dokumentation.tex
+% -------------------------------
+\chapter{Design} % ~4–5 pages, ~1600–2000 words
+% -------------------------------
+\label{chap:design}
+
+
+\section{Requirements}
+% Aus Kapitel 1 breiter ausgeführt, ASTRA_sim bezogen, usability etc.
+
+\section{Requirements Analysis}
+% zb viele excel files = Graphs idk -> konkret darauf eingehen was gebraucht wird
+
+\section{Technology Selection}
+% grommet = branding
+% flask API = einfacher astra sim zugang
+% react = wegen grommet
+% TS = wegen data consistency ( evtl braucht astra sim des halt wegen viele inputs und so)
+% python = vorliegende scripte, simple API
+% Docker = Container vs keine = easy ASTRA-sim deployment (installationen dependencies etc), Separation of concerns
+% Figma = usability pretesting, early feedback & user tests
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{figures/methodology_flowchart.png}
+    \caption{Methodology flowchart}
+\end{figure}
+
+\section{UI/UX Design Process}
+% Wireframes, heuristics ??? TODO check this comment
+% Immer Bezug auf Kapitel 2.3 nehmen! Wegen wissenschaft und so
+% 1. Overview (Branding & Wizard)
+% 2. ASTRA-sim Inputs (analyse (prio, thema weil falsch), beispiel & default werte (tablellen), UI entscheidungen Input type)
+% 3. ASTRA-sim Outputs (analyse, visualisierungs  möglichkeiten, evtl data science block für weitere extensions denn das würde python legimatisieren)
+% 4. Extended Features: Import & export, History
+% 5. Umsetzung: Wireframe first idea what was bad, next idea, what was bad now idea what is bad oder so
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{figures/cli_vs_ui_workflow.png}
+    \caption{Concept diagram: CLI workflow vs UI workflow}
+\end{figure}
+

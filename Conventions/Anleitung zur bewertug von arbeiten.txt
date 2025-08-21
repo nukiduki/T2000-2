@@ -1,0 +1,195 @@
+Stand: Januar 2013
+1
+Anleitung zur Bewertung von Projekt-, Studien- und Bachelorarbeiten
+Prinzip
+Die Begutachtung von Studien- und Diplom- bzw. Bachelorarbeiten erfolgt in zwei Schritten:
+1. Schritt: Schematische Bewertung
+(Excel-File: 2012_Bewertung_Projekt_Studien_Bachelor.xls)
+2. Schritt: Erläuterung der Bewertung, Gutachten
+(Word-File: 2012_Bewertung_Text_Projekt_Studien_Bachelor.doc)
+Diese beiden Schritte sollten mit den vorliegenden Formularen durchgeführt werden. Sie sind in jedem Fall so
+zu dokumentieren, dass ein Außenstehender oder der Student die Notenfindung nach diesen Kriterien nachvollziehen kann.
+Die Anwendung eines PCs ist hilfreich, besonders bei der schematischen Bewertung zur Ermittlung des
+Notenvorschlags anhand der Bewertungspunkte.
+Diese Anleitung hilft dem/der Gutachter/in sowohl bei der inhaltlichen Bearbeitung dieser zwei
+Begutachtungsschritte als auch in der Anwendung der Hilfsmittel auf dem PC.
+Schematische Bewertung
+Die schematische Bewertung gliedert sich in zwei Bereiche, die jeweils in mehreren Kriterien vom/von der
+Gutachter/in mit einer Punktzahl bewertet werden.
+Bereich Kriterium Gewichtung
+Inhaltliche Bearbeitung Fachliche Bearbeitung
+Nutzung von Fachwissen
+Einsatz von Methoden und Werkzeugen
+Umsetzbarkeit des Ergebnisses
+Kreativität
+Wirtschaftliche Bewertung
+55%
+Problemorientierte Darstellung Selbstständigkeit, Eigeninitiative
+Systematik
+Dokumentation
+Literaturrecherche
+45%
+Praxis-
+Stand: Januar 2013
+2
+Für jedes der Kriterien gibt es fünf verbale Leistungsstufen (nicht bestanden, ausreichend, befriedigend,
+gut, sehr gut), die dem/der Gutachter/in helfen eine angemessene Punktzahl für jedes Kriterium zu
+vergeben.
+Bei den einzelnen Kriterien sind zur Beurteilung folgende Aspekte zur berücksichtigen:
+Inhaltliche Bearbeitung
+Fachliche
+Bearbeitung
+Wie wurde das Thema abgehandelt (empirisch/theoretisch/referierend, vergleichend,
+auswertend (Literaturarbeit)/eigene Untersuchungen, Erhebungen experimentell)?
+Werden Ergebnisse bzw. Teilergebnisse in Bezug auf die Aufgabenstellung erreicht?
+Wird ggf. eine Nicht-Lösbarkeit der Aufgabe nachgewiesen? Führen die
+Arbeitsergebnisse zu einer klaren Aussage? Werden diese begründet, bewertet und
+kritisch reflektiert? Werden Alternativen aufgezeigt? Werden verschiedene
+Lösungswege analysiert? Ist die Auswahl des Lösungsweges begründet? Wie weit ist
+der Stand der Technik und des Wissens berücksichtigt worden? Wurden zusätzliche
+Aspekte bearbeitet?
+Nutzung von
+Fachwissen
+Welche Fachkenntnisse zeigt der Verfasser bei der Bildung eines Lösungsansatzes?
+Wurde theoretisches Wissen aus Studium und Literatur in die Praxis umgesetzten bzw.
+angewendet? Wie breit gefächert sind die angebotenen Lösungsansätze? Wie fachlich
+fundiert ist die Lösung?
+Einsatz von
+Methoden
+und
+Werkzeugen
+Erfolgt eine bewusste Auswahl von Ingenieurmethoden und – werkzeugen zur
+Problemanalyse und Lösungsfindung, ggf. angemessener Umgang damit? Werden die
+Methoden und Werkzeuge konsequent und fundiert eingesetzt?
+Umsetzbarkeit
+der
+Ergebnisse
+Können die Ergebnisse umgesetzt werden bzw. wurden die Ergebnisse in der Praxis
+umgesetzt? Werden die positiven und negativen Effekte des Ergebnisses beschrieben
+und bewertet? Werden Schwierigkeiten bei der Umsetzung benannt und
+Lösungsansätze aufgezeigt?
+Kreativität
+Handelt es sich generell und/oder in der Kombination um neue Erkenntnisse? Sind
+diese ausreichend begründet, bewiesen, zuverlässig ermittelt? Werden eigene
+Lösungsstrategien erarbeitet? Wie ist der Grad der Originalität der Lösungsvorschläge?
+Werden ungewöhnliche Lösungswege aufgezeigt? Wie werden bekannte Lösungen auf
+neue Situationen übertragen?
+Wirtschaftliche
+Bewertung
+Ist der Studierende in der Lage, den wirtschaftlichen Nutzen der Arbeit darzustellen?
+Werden Lösungsvorschläge und Alternativen nicht nur fachlich, sondern auch
+wirtschaftlich analysiert und bewertet? Was sind die nicht finanziellen Vorteile der
+Lösung?
+Stand: Januar 2013
+3
+Fortsetzung
+Wissenschaftliches Arbeiten
+SelbstständigkeitEi
+geninitiative
+Werden eigene Lösungen bzw. Lösungsstrategien gefunden? Werden eigene
+Entscheidungen getroffen? Werden Informationen selbständig besorgt? Werden eigene
+Vorschläge zum Vorgehen eingebracht? Erfolgt Identifikation mit der Aufgaben? Ist
+Interesse an der Arbeit erkennbar?
+Systematik
+Werden Methoden konsequent eingesetzt? Werden Prioritäten sinnvoll gesetzt? Erfolgt
+eine Konzentration auf das Wesentliche? Werden Überlegungen durchgängig verfolgt
+und bearbeitet? Ergibt sich eine klare inhaltliche Struktur der Arbeit? Wird die Aufgabe
+strukturiert angegangen (Ziele setzen, Planen, Durchführen, Kontrollieren)?
+Dokumentation
+Ist die Gliederung logisch und ausgewogen? Ist die Gedankenführung klar und
+nachvollziehbar gegliedert? Sind die Texte prägnant, präzise und verständlich? Gibt es
+eine kurze, treffende, auf das Wesentliche beschränkte und verständliche
+Zusammenfassung der Arbeit? Wird die Verständlichkeit durch aussagekräftige
+Beispiele, Abbildungen, Grafiken und Tabellen unterstützt? Ist die Terminologie fachlich
+korrekt? Ist der sprachliche Ausdruck angemessen/ umgangssprachlich/ gekünstelt?
+Stimmen Satzbau, Orthographie und Zeichensetzung? Sind firmenspezifische und
+fachfremde Ausdrücke erläutert?
+Literaturrecherche
+Sind in der verwendeten Literatur alle relevanten, aktuellen Quellen enthalten? Wie
+umfassend wurde die Literatur recherchiert? Werden Teilfragestellungen / Aspekte der
+Aufgabenstellung auch über eine vertiefte Literatursuche sondiert? Werden alle im Text
+benutzten Quellen vollständig und korrekt im Literaturverzeichnis genannt?
+Verwendung der
+Literatur
+Wurden die angeführten Literaturstellen erschöpfend diskutiert und kritisch reflektiert?
+Wie vollständig sind die Quellen ausgewertet und verarbeitet worden? Wurden die
+Aussagen mit Literatur belegt und vertieft?
+Die Gewichtung der Bereiche bleibt auch bei einer Änderung der Gewichtung der Kriterien durch
+Veränderung der Maximalpunktzahl erhalten.
+Für die Kriterien gibt es eine Standardverteilung der Maximal-Punktwerte (Vorschlag Maximalpunktzahl), die
+vom/von der Gutachter/in bei Vorliegen von triftigen Gründen geändert werden kann. Je nach Charakter
+einer Arbeit ist es denkbar, dass einzelne Kriterien nur eine geringere Gewichtung verdienen oder ganz weg
+fallen. In diesen Fällen sind die Gründe für die Änderungen der Maximalpunktzahlen im Gutachten näher zu
+erläutern.
+Die Anwendung der Tabellenkalkulation ist einfach:
+1. Bei Bedarf: Festlegen der Maximalpunktzahlen pro Kriterium durch
+Überschreiben der Vorgabewerte der vorletzten Spalte.
+2. Bewertung einzelnen Kriterien durch Eintippen der Punktwerte pro Kriterium in der letzten Spalte.
+3. Notenvorschlag wird ausgerechnet und angezeigt.
+Stand: Januar 2013
+5
+Das Ergebnis der schematischen Bewertung ist ein Notenvorschlag, der als Grundlage für die Noten dienen
+soll. In der Erläuterung der Bewertung können jedoch besondere Umstände dargestellt werden, die ein
+Abweichen vom Notenvorschlag notwendig machen.
+Erläuterung der Bewertung, Gutachten
+Das Gutachten orientiert sich an der Struktur der schematischen Bewertung. Für jeden Teilbereich wird die
+Leistung des Studierenden in zwei, drei Sätzen erläutert. Dabei ist nach Möglichkeit auf zentrale Stellen der
+Arbeit direkt hinzuweisen.
+Weiterhin sind im Gutachten ggf. die Gründe für ein Abweichen von der Standard-Maximal-Punkteverteilung zu
+erläutern.
+Abschließend soll im Gutachten gegebenenfalls erläutert werden, warum mit der Endnote vom Notenvorschlag der schematischen Bewertung abgewichen wird.
+Stand: Januar 2013
+6
+Anwendung der Hilfsmittel auf dem PC
+Anwendung der schematischen Bewertung
+Die schematische Bewertung liegt in Form eines Tabellenkalkulationsfiles vor. Diesen File erhält ein/eine
+Gutachter/in über den Studierenden, den Studiengangsleiter, oder als Download aus den Internetseiten der
+DHBW.
+Einzelne Felder dieser Tabellenkalkulation sind farblich hinterlegt. Die einzelnen Farben bedeuten:
+Hellgelb Kann-Eingabefelder
+Hellgrün Muss-Eingabefelder
+Blau Felder sind in der Erläuterung der Bewertung zu erläutern
+Rot Fehler, keine stimmige Bewertung
+Magenta Notenvorschlag schlechter als 4,0 !
+1. Festlegen der Maximalpunktzahlen pro Kriterium
+Die Gewichtung einzelner Kriterien kann durch Überschreiben der Maximalpunktzahlen in der Spalte
+„Maximalpunktzahl für diese Arbeit“ verändert werden (Hintergrundfarbe verändert sich zu blau). Damit die
+relative Gewichtung der drei Bereiche erhalten bleibt werden ggf. die Punkte entsprechend der veränderten
+Gewichtung in Bewertungspunkte umgerechnet.
+Änderungen der Maximalpunktzahlen sind in der Erläuterung der Bewertung zu begründen.
+2. Bewertung einzelner Kriterien
+Für jedes relevante Kriterium hat der/die Gutachter/in eine Punktzahl zwischen „0“ [Null] und Maximalpunktzahl zu vergeben. Dazu sollen die verbalen Erläuterungen von fünf Leistungsstufen pro Kriterium als Referenz herangezogen werden. (Die hinweisenden Punktzahlen unter den Erläuterungen verändern sich bei
+Änderungen der Maximalpunktzahl.)
+Aus den vergebenen Punkten und der relativen Gewichtung wird eine Bewertungspunktzahl errechnet, die
+zu einem Notenvorschlag führt.
+Wird der Hintergrund des Tabellenfeldes bei einer Punkteeintragung rot, wurden mehr Punkte vergeben als in
+der Spalte Maximalpunktzahl definiert.
+Die Funktionen der Tabellenkalkulation wurden geschützt, um eine möglichst problemlose Anwendung ermöglichen. Sie erhalten die Datei als ExcelXP (.xlt). Bitte öffnen Sie die Datei durch Doppelklick oder über den
+Befehl NEU damit Sie die Vorlage nicht verändern.
+Stand: Januar 2013
+7
+3. Anwendung der Erläuterung der Bewertung
+Die schematische Bewertung einer Projekt-, Studien- oder Bachelorarbeit ist nur der erste Schritt einer Begutachtung. Im zweiten Schritt muss die schematische Bewertung durch ein schriftliches Gutachten in Form
+der Erläuterung der Bewertung komplettiert werden!
+Dazu ist zu jedem Kriterium der schematischen Bewertung in zwei, drei Sätzen die vergebene Punktzahl zu
+erläutern. Verweisen Sie dabei, wenn möglich, auf konkrete Absätze in der Arbeit, die für die Bewertung
+entscheidend sind.
+Falls einzelne Kriterien für die Arbeit nicht verwendet werden oder von den vorgeschlagenen Gewichtungen
+abgewichen wird, erläutern Sie dies bitte.
+Falls Ihre Endnote aufgrund besonderer Umstände vom Notenvorschlag der Excel-Tabelle abweicht,
+begründen Sie bitte, welche weiteren Kriterien dafür ausschlaggebend sind, bzw. welche Besonderheiten der
+Arbeit zu berücksichtigen sind.
+4. Sonstiges
+• Abzugeben sind bei der DHBW von jedem/r Gutachter/in ein Ausdruck beider Teile der Bewertung (drei
+Seiten – der Druckbereich ist voreingestellt), wobei die Endnote handschriftlich zusammen mit der
+Un terschrift auf die Erläuterung der Bewertung eingetragen werden sollte.
+• Für Zweitgutachter/innen sind die Kriterien “Kreativität“ sowie „Selbstständigkeit, Eigeninitiative“ oft
+schwer zu beurteilen. Daher sollten diese Kriterien ggf. aus der Bewertung entnommen werden.
+• Zweitgutachtern/innen wird empfohlen, dass sie die Ausbildungsstätte mindestens zweifach besuchen,
+um sich im Gespräch mit dem Studierenden und seinem/r Betreuer/in ein sachgerechtes Bild von den
+Umständen der Arbeit machen zu können. Dabei hat sich ein Besuch ca. zwei Wochen nach Start der
+Arbeit und ein Besuch gegen Ende der Arbeit bewährt.
+• Sollte in einer sehr anwendungsnahen oder sehr speziellen Thematik für die Bachelorarbeit kaum direkt
+relevante Literatur zu finden sein, ist die entsprechende Grundlagenliteratur besonders gründlich
+aufzuarbeiten. Eine fundierte Literaturrecherche ist auch in diesen Fällen für eine qualifizierte
+Bachelorarbeit notwendig. 
