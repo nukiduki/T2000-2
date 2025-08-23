@@ -1,9 +1,16 @@
 %!TEX root = ../dokumentation.tex
 
+% \begin{titlepage}
+% 	\begin{longtable}{p{8.2cm} p{5.4cm}}
+% 		{\raisebox{\ht\strutbox-\totalheight}{\includegraphics[height=1.5cm]{images/logo-new.png}}} &
+% 		{\raisebox{\ht\strutbox-\totalheight}{\includegraphics[height=2.5cm]{images/dhbw.png}}}
+% 	\end{longtable}
+
+
 \begin{titlepage}
 	\begin{longtable}{p{8.2cm} p{5.4cm}}
-		{\raisebox{\ht\strutbox-\totalheight}{\includegraphics[height=2.5cm]{images/hpe_logo.png}}} &
-		{\raisebox{\ht\strutbox-\totalheight}{\includegraphics[height=2.5cm]{images/dhbw.png}}}
+		\makebox[8.2cm][l]{\vcenter{\hbox{\includegraphics[height=1.5cm]{images/logo-new.png}}}} &
+		\makebox[5.4cm][r]{\vcenter{\hbox{\includegraphics[height=2.5cm]{images/dhbw.png}}}}
 	\end{longtable}
 
 	\enlargethispage{20mm}
@@ -13,21 +20,21 @@
 		\vspace*{12mm}	\langdeckblattabschlusshinleitung\\
 		\vspace*{3mm}		{\textbf \abschluss}\\
 		\vspace*{12mm}	\langartikelstudiengang{} \langstudiengang{} \studiengang\\
-    \vspace*{3mm}		\langanderdh{} \dhbw\\
+		\vspace*{3mm}		\langanderdh{} \dhbw\\
 		\vspace*{12mm}	\langvon\\
 		\vspace*{3mm}		{\large\textbf \autor}\\
 		\vspace*{12mm}	\datumAbgabe\\
-		\vspace*{12mm} 
+		\vspace*{12mm}
 	\end{center}
 	\vfill
 	\begin{spacing}{1.2}
-	\begin{tabbing}
-		mmmmmmmmmmmmmmmmmmmmmmmmmm             \= \kill
-		\textbf{\langdbbearbeitungszeit}       \>  \zeitraum\\
-		\textbf{\langdbmatriknr, \langdbkurs}  \>  \martrikelnr, \kurs\\
-		\textbf{\langdbfirma}                  \>  \firma, \firmenort\\
-		\textbf{\langdbbetreuer}               \>  \betreuer\\
-		\textbf{\langdbgutachter}              \>  \gutachter
-	\end{tabbing}
+		\begin{tabbing}
+			mmmmmmmmmmmmmmmmmmmmmmmmmm             \= \kill
+			\textbf{\langdbbearbeitungszeit}       \>  \zeitraum\\
+			\textbf{\langdbmatriknr, \langdbkurs}  \>  \martrikelnr, \kurs\\
+			\textbf{\langdbfirma}                  \>  \firma, \firmenort\\
+			\textbf{\langdbbetreuer}               \>  \betreuer\\
+			\textbf{\langdbgutachter}              \>  \gutachter
+		\end{tabbing}
 	\end{spacing}
 \end{titlepage}

@@ -34,9 +34,9 @@ These problems demand a solution. Parts of these problems could be solved by sca
 Naturally, the developed solution was distributing the training. \ac{DML} is a subset of \ac{ML} that splits the training process onto multiple \acp{NPU}~\cite{bekkerman_scaling_2011}.
 In 2024, distributed training became the standard for large scale systems and remained the state of the art~\cite{li_understanding_2024}. 
 
-\subsubsection*{DML Basics}
+\subsubsection*{DML Characteristics}
 %% Either topic separated or timeline
-%% Clusters, GPUs/TPUs, cloud computing, IaaS (SimGrid IaaS paper can illustrate system-level concerns).
+%% Clusters, GPUs/TPUs, cloud computing, IaaS (SimGrid IaaS paper can illustrate system-level concerns). computation
 %% Topologies
 With \ac{DML} a solution for scaling was introduced, and new challenges have to be solved.
 Distributing the machine learning process is not straightforward---it depends on many factors, such as the way of splitting, network latencies and communication strategies.
@@ -140,6 +140,7 @@ The used operations can be implemented  on top of various topologies, which infl
 \end{figure}
 
 Depending on the underlying physical topology, different logical topologies can be useful for the different collectives, as different complexities of bandwidths are relevant. Also, overlay topologies can be used to create virtual links to support exchanging data between unconnected nodes. % TODO check
+Furthermore, topologies can be defined on multiple dimensions. Examples are a two-dimensional ring or a three-dimensional torus.
 
 
 % Depending on the type of communication and 
@@ -150,30 +151,84 @@ Depending on the underlying physical topology, different logical topologies can 
 
 % Topologies
 
-\subsubsection*{DML Characteristics}
-\ref{sec:discussion}
+\subsubsection*{DML Challenges}
+\label{sec:discussion}
 % 4. Communication vs Computation, Parallelization strategy, extension ML to DML (maybe between section 1 and 2)
+With many factors to consider, the \ac{DML} process allows a high range of configurations.
+The first challenge is the communication overhead created when synchronizing shared parameters with workers that have different efficiency in their computations. 
+Especially in centralized topologies with synchronized communication, workers waiting for others to finish should be avoided~\cite{sze_hardware_2017}. 
+% \todo[inline]{Which topologies?} TODO
+Additionally, when increasing computation allowance between communication times, a decrease of accuracy is likely to happen, as the model is trained less cohesively~\cite{yang_balancing_2025}.
+
+Yang et al. claim that nowadays configurations of large \ac{DML} systems base on decentralized architectures with asynchronous communication~\cite{yang_balancing_2025}. 
+% TODO add maybe more...
+Challenges like those get solved by research and evaluation tests of many configurations. Such adn apporach needs to consider model accuracy, energy consumption, throughput and latency, and cost\cite{lee_model_2014}. To save resources and optimize configuration finding simulators can be used.
+
+\section{ASTRA-Sim and Related Simulation Tools}
 
 %% Simulation relevance
 %%% Fault tolerance, heterogeneity, stragglers, energy efficiency
 %%% Algorithms vs infrastructure interplay
 %%% Simulation/benchmarking necessity (bridges into next section
 
-\section{Performance Modeling and Simulation Tools}
+% TODO write if time and space necessary
+
+The most extensive publicly available \ac{DML} simulator with a focus on \ac{SW}/\ac{HW}-Co-Design is \ac{ASTRA-Sim}~\cite{rashidi_astra-sim_2020}.  
+Its goal is to enable researchers to model and analyze configurations of \ac{DML}. It has a focus on hierarchical systems and communication for both intra- and inter-node-communication.
+While there are many different versions of \ac{ASTRA-Sim} the following explanation focusses on \ac{ASTRA-Sim} 1.0 with an analytical backend. Explanations and comparison to other versions are provided in the subsection \ref{sec:comparison}.
+
 % ASTRA-sim: 
 % 1. Grundkonzept
-% \begin{figure}[H]
-%     \centering
-%     \includegraphics[width=0.8\textwidth]{figures/astra_architecture.png}
-%     \caption{ASTRA-sim architecture overview}
-% \end{figure}
+\subsubsection*{ASTRA-Sim Approach and Implementation}
+Generally \ac{ASTRA-Sim} consists of layers which enable users to configure and simulate specific input fields. The core of ASTRA-Sim features two parts. A workload layer that is used to specify the to be trained model, with expected layers of communication, and a system layer that can enable configure used collectives and scheduling policies.
+\ac{ASTRA-Sim} is a network centered simulator, naturally an additional feature layer lets the user configure physical dependencies like topologies and bandwidths.
+Initially, \ac{ASTRA-Sim} featured the existing Garnet network simulator \cite{agarwal_garnet_2009}. % TODO one sentence more
 
-% 2. Network
-% 3. System
-% 4. Workload
+The workload layer uses an external computation model, like Scale Sim~\cite{samajdar_scale-sim_2019} to calculate each layers used \acp{GEMM}. Its inputs are based on the parallelization strategy \textit{(Data, Model, Hybrid)}, size of communication and structure of layers. 
+
+The system layer implements collective operations dependent on logical topologies \textit{(All-Reduce, All-Gather, ...)}. Other configurable dependencies are the scheduling policy \textit{(\ac{LIFO}, \ac{FIFO})} and specifics such as the amount of splits of the dataset or \acp{LSQ}, which are the active chunks processed per dimension. This layer is able to simulate different phases in the communication, like multistage collectives and real-time differences between multiple dimensions.
+% TODO introduce LIFO and FIFO bevore so it is in acronyms here...
+
+The network layer simulates the hardware dependencies. The analytical version is able to consider configurations for multiple dimensions too. For each dimension a topology \textit{(Ring, Fully Connected, Switch)} with its amount of \acp{NPU} can be specified. The simulator includes latencies for links, routers and \acp{NIC} and bandwidths for links. The number of links is also important. Lastly the network layer can also simulate \ac{HBM}, with its latency, bandwidth and memory scale. 
+% TODO introduce NICS before (i think i did, didnt I?) TODO AND introduce HBM!!
+
+% A feature layer necessary for \ac{ASTRA-Sim} to work is a network layer. 
+% three parts, called layers. They are separate simulators for workloads, system and the underlying network. 
+Figure \ref{fig:astra-architecture} shows the original architecture with the Garnet network simulator.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{astra-architecture.png}
+    \caption{ASTRA-sim Architecture Overview, Official ASTRA-Sim 1.0 release~\cite{rashidi_astra-sim_2020}}
+  \label{fig:astra-architecture}
+\end{figure}
+
+Each simulation iteration start with the initialization, where the user can specify their configurations. In the implementation this is separated by layer to a \ac{JSON} file for the network, a \ac{TXT} file for the system and a \ac{TXT} file for the workload. 
+In the second step the workload gets produced. The loop produces sets of communication which again get separated into chunks for the processing.
+In the next step the chunks get sorted into \acp{LSQ} and dispatched. This stream gets supervises and restarted if necessary. 
+Next the final network simulation happens. In the analytical network the backend network gets simulated purely mathematically.
+Lastly, \ac{ASTRA-Sim} exports its results into \ac{CSV} files. These show among other aspects the time of communication per layer, the distribution of computation vs communication and bottlenecks.
+
+% \subsubsection*{Configurable Inputs}
+% % 2. Network
+% % 3. System
+% % 4. Workload
+
+\subsubsection*{Versions and Modifications of ASTRA-Sim}
+\label{sec:comparison}
+Its initial release in 2020 includes a Garnet network. It was expanded later by an analytical network simulation. While Garnet is cycle accurate, so it simulates clock and packets in detail, the analytical network is based on mathematical approximate models. Therefore, the analytical model is slightly inaccurate, as it is for example not congestion aware, but it is more scalable than the garnet network.
+
 % 5. 2.0 & more extensions
+In 2023 a second version of \ac{ASTRA-Sim} was released~\cite{won_astra-sim20_2023}. It addresses the need for a higher scalable simulator, as deep learning models grew. 
+The workload layer was replaced with a chakra traced based workload layer. That is a graph based workload documentation~\cite{sridharan_chakra_2023}. % TODO is documentation the right word?
+It replaces the previous static trainings loop with a dynamic one based on \acp{ET}. \acp{ET} can be extracted form frameworks such as PyTorch. This workload layer supports more specific parallelization strategies \textit{(Pipeline, Hybrid-Parallel, ...)}. % TODO check if that makes sense, because hybrid was existing before
 
+\subsubsection*{Comparison to Further Simulation Tools}
 % Weitere Tools: NS-3, MLPerf, SimGrid: Use cases & why it was not considered here
+
+A specialty of \ac{ASTRA-Sim} is that it supports hierarchical topologies, so it can model asymmetrical bandwidths. Also, it allows a differentiation between logical and physical topologies. This is especially relevant for research contexts.
+Additionally, it is easily extendable as layers can be exchanged and new factors such as new topologies or strategies can easily be added.
+
 % \begin{table}[H]
 %     \centering
 %     \caption{Feature comparison of simulation tools}
@@ -188,6 +243,7 @@ Depending on the underlying physical topology, different logical topologies can 
 %         \bottomrule
 %     \end{tabular}
 % \end{table}
+
 
 \section{User Interface Design for Scientific Tools}
 % Accessibility, UI patterns, visualization  ==> I HAVE TO DO LITERATURE REVIEW FIRST!!!!!
