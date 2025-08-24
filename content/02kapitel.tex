@@ -8,11 +8,11 @@ In this chapter, the current state of the art and literature get presented.
 First, the development of machine learning to distributed machine learning gets sketched. Then, \ac{ASTRA-Sim} gets presented and compared to alternative \ac{DML} (simulation) approaches.
 Lastly, \ac{UI} and \ac{UX} best practices, with a focus on evaluation criteria and \aac{UI} for scientific tools get presented. 
 
-\section{History of Distributed Machine Learning}
+\section{Development of Distributed Machine Learning}
 % 1. ML: Zyklus, Purpose
 \ac{DML} is a concept based on \ac{ML} distributed on multiple machines. To deeply understand it, one needs to know basics of \ac{ML} first.
 
-\subsubsection*{Development of Machine Learning}
+\subsubsection*{History of Machine Learning}
 %% Historical
 %%% Early Turing + (59er book)
 The concept of machines learning similar to human learning was first proposed in 1950 by Turing \cite{turing_computing_1989}. He proposed the first known of theoretical description of the concept that later became known as \ac{AI}.
@@ -287,7 +287,6 @@ In the following, design principles of \acp{UI} in general and in this projects 
 
 
 \subsubsection*{Human-Computer Interaction Foundations}
-
 \ac{HCI} is an interdisciplinary area that deals with the design, evaluation and implementation of interactive computer systems~\cite{sinha_human_2010}. Its goal is to improve these systems in their functionality and usability. 
 Specific goals also include methods for designing and implementing user-friendly \acp{UI} as well as criteria for evaluating and comparing interfaces. \ac{HCI} also focusses on the development of new interaction techniques and models to human machine interactions. 
 
@@ -303,10 +302,9 @@ One important sub category of \ac{HCI} is cognitive load. Kosch et al.~\cite{kos
 Defining cognitive workload is a challenge, it describes the amount of complexity the human brain gets presented with when executing tasks. In the field of website \ac{GUI} design this can be transferred as the complexity of brain processes a user goes through to navigate the website. Naturally, they should be minimized to ensure the least possible complexity when using the website. % TODO erwähne in chapter 3 die idee von einer NLP input, weil dass hier dann relevant wird.
 Because digital systems are getting increasingly more complex, measurements of cognitive workloads gets increasingly more difficult. They present metrics such as questionnaires, which are very subjective, physiological sensors which are very objective or presented behavior, like the users mouse activity.
 With those evaluations different layouts or navigation structures can be tested and compared. 
-
+% TODO write more --> congitive load relative to other layouts etc
 
 % Principles of usability
-
 % Viuzualization
 
 % Feedback loops
@@ -329,12 +327,7 @@ The resulting five \ac{SSOU} represent states needed in communication between hu
 
 For every stage the computer needs to provide specific feedback, so the user feels informed, and unnecessary interactions can be reduced. 
 
-
-
-
 % TODO in chapter 3 erwähne dass der fake sinner auf processing stage hindeutet AUCH: hpe grommet design vieles dementsprechend, buttons hervorgehoben etc
-
-
 
 
 \subsubsection*{UI/UX Best Practices and Evaluation Metrics}
@@ -355,11 +348,17 @@ Personas can be used to design specific usability tests or specifications of nec
 Combined with \ac{HCI} it can be used to evaluate the necessity of certain aspects such as the extent of necessary feedback.
 
 % Non expert vs Expert users
-One classification that could be made for users is weather they are experts or non-experts in the field of the website. This is especially important for scientific tools.
+One classification that could be made for users is whether they are experts or non-experts in the field of the website. This is especially important for scientific tools, as they deal with specific areas that are not relevant in daily life of most people.
+An expert in the field of usability and \ac{HCI} is Nielsen, that states that intuitiveness is central for website usage for novice users~\cite{nielsen_differences_2006}. Even though his post was publicized in 2000, it still holds relevance today, but has to be regarded with conciseness. 
+He states that the interface has to be differentiated between expert and novice users. While non-experts should be getting training-wheel designs to get guidance of usage, experts should get interfaces that provide a powerful tool set.
+Also, the development from novices to experts can be supported but need to be observed with usability tests.
 
+% Practical evaluation metrics
+A recent approach of methodically revising and restructuring \ac{UI} recommendations was done by Diehl et Al in 2022\cite{diehl_defining_2022}. The method included expert interviews and a content analysis with a revalidation of an expert group.
+The resulting $69$ general recommendations can be divided into $12$ categories. These are feedback, recognition, flexibility, customization, consistency, error handling, help, accessibility, navigation, privacy, visual design and emotional design. The entire list can be found in the appendix~\ref{appendix:A}.
+The recommendations are closely connected to presented \ac{HCI} approaches. Mentionable recommendations for instance also include that systems should enable users to easily recognize user functions (recognition, rule 3), it should ensure consistency in appearance (consistency, rule 1), it may concentrate the information mainly in the center of the screen (visual, rule 2), and it should provide the options and information in a logical sequence (navigation, rule 1). Further relevant rules are presented in chapter \ref{chap:design}.
 
-
-
+% TODO add evaluation metrics for things measured in chapter 5
 
 % \subsubsection*{UI and UX in Scientific and Simulation Tools}
 % Specific challenges
