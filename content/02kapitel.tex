@@ -30,7 +30,7 @@ In the following years, many concepts of \ac{ML} were revised and newly discover
 As \ac{ML} grew and gained importance, problems regarding growing demands arose. One is the growing availability of datasets. With more data available, training once possible in a few ours might take days or even years to finish, if not optimized. The data is also more complex, forming vectors of increasing dimensions, compared to past data.
 Also, models are increasing in complexity, so do deep networks have trillions of parameters compared to shallow neural networks in 1990 \cite{oneto_limitations_2020}.
 These problems demand a solution. Parts of these problems could be solved by scaling with improved hardware as an option, as chips could be made more efficient by scaling with smaller transistors~\cite{sevilla_compute_2022}. This approach, based on Moore's law~\cite{moore_cramming_2006}, is not upholdable anymore, in the 2010s it was declared ``dead''~\cite{theis_end_2017}.
-% This approach, based on Moore's law, is not upholdable anymore, in 2022 it was declared ``dead'' by Nvidias CEO~\cite{}.
+% This approach, based on Moore's law, is not upholdable anymore, in 2022 it was declared ``dead'' by Nvidias CEO~\cite{.}.
 Naturally, the developed solution was distributing the training. \ac{DML} is a subset of \ac{ML} that splits the training process onto multiple \acp{NPU}~\cite{bekkerman_scaling_2011}.
 In 2024, distributed training became the standard for large scale systems and remained the state of the art~\cite{li_understanding_2024}. 
 
@@ -42,7 +42,7 @@ With \ac{DML} a solution for scaling was introduced, and new challenges have to 
 Distributing the machine learning process is not straightforward---it depends on many factors, such as the way of splitting, network latencies and communication strategies.
 
 % TODO describe very basic the basics like computation & communciation
-The basic \ac{DML} process combines individual computation of different workers with a communication between them. That way they can train one model together by separating tasks. This separation can follow two approaches visualized in figure \ref{fig:parallelism} by the official PyTorch website (https://docs.pytorch.org/torchrec/high-level-arch.html) \cite{}.
+The basic \ac{DML} process combines individual computation of different workers with a communication between them. That way they can train one model together by separating tasks. This separation can follow two approaches visualized in figure \ref{fig:parallelism} by the official PyTorch website (https://docs.pytorch.org/torchrec/high-level-arch.html) \cite{noauthor_torchrec_nodate}. % Torchrec SOURCE
 One, called data parallelism, is splitting the data that the model is supposed to train on. That way, all workers iteratively train a part of the data onto the same model and communicate the models parameters and gradients between computation iterations. 
 While data parallelism has the advantage of being easily implementable and reduce computation times nearly linearly (TODO check if true lol), its communication can create new overheads if workloads are distributed unevenly and a synchronous communication is used. Detailed on that and further advantages and disadvantages get discussed in section \ref{sec:discussion}.
 The other parallelization, called model parallelism, a type being for example pipeline parallelism, is focussing on splitting the models parts onto the workers. Here, the layers of the model are divided and trained separately with according communication. This has the advantage of enabling training to include large models, but requires more complicated communication than data parallelism.
@@ -57,11 +57,14 @@ Common are also hybrid approaches in which both data and models get split. This 
 
 % 2. Hardware: Topologies, latency, bandwith, structure
 \subsubsection*{Hardware Details}
-The workers used in the \ac{DML} process, generally called \acp{NPU}, are usually \acp{GPU}. They can appear in high amounts, from 8 \acp{GPU} for research purposes to 1000s for \acp{LLM} like GPT-5~\cite{}.
+The workers used in the \ac{DML} process, generally called \acp{NPU}, are usually \acp{GPU}. They can appear in high amounts, from 8 \acp{GPU} for research purposes to 1000s for \acp{LLM} like GPT-5~\cite{network_how_2024}. % SOURCE
 
 A set of \acp{NPU} structured together is called cluster, and each cluster is able to take different amounts of them. How they are connected in each cluster is described by a physical network topology. Every cluster in one machine, or called node, respectively, communicates via intra-node-communication. \acp{NPU} communicating between different nodes is possible over \acp{NIC}, which are connected in an inter-node-network.
 % Bandwidths and Latencies
-While intra-node communication has low latencies and high bandwidths, inter-node-communication has rater high latencies and low bandwidths. This would make a distributed training with few machines attractive, but realistic distribution onto many machines is much more scalable \cite{}. That is due to the limited amount of \acp{GPU} in one server~\cite{}. Therefore, large distributed systems use and depend on both, intra and inter-node-communication.
+While intra-node communication has low latencies and high bandwidths, due to connections via NVLinks or PCIle switches, inter-node-communication has rater high latencies and low bandwidths beacause of used network interfaces like InfiniBand~\cite{gangidi_rdma_2024}. % source sais: Intra-node communication is generally faster due to high-bandwidth NVLink or PCIe connections, whereas inter-node communication relies on slower network interfaces such as InfiniBand.
+This would make a distributed training with few machines attractive, but realistic distribution onto many machines is much more scalable.
+That is due to the limited amount of \acp{GPU} in one server. % TODO check source first: A Study on Distributed Strategies for Deep Learning Applications in GPU Clusters; source: While training on fewer nodes reduces communication overhead, it limits the total number of GPUs available. For large models, scaling across many nodes becomes necessary despite the increased communication cost.
+Therefore, large distributed systems use and depend on both, intra and inter-node-communication.
 % Topologies
 The topologies of distributed systems can be based on different architectures. Verbreaken presents that there are four types of topologies that can exist for distributed systems~\cite{verbraeken_survey_2020}. Generally they can be divided into centralized, decentralized and fully distributed topologies, based on the degree of the distribution. A structural overview can be found in~\ref{fig:topologies}.
 
@@ -236,7 +239,7 @@ For network simulation the network layer was used, and the two existing implemen
 The analytical backend is still implemented as a scalable and fast approximate network simulator, but the Garnet backend was abandoned.  
 Now instead the \ac{NS-3}~\cite{riley_ns-3_2010} and the \ac{HTSim}~\cite{besta_towards_2021} backend can be used for the network simulation. 
 The \ac{NS-3} is a well established network simulator, that includes realistic network conditions with congestion and routing, which makes it suitable for simulation that needs to be very accurate and realistic. \ac{HTSim} rather focusses on the integration of Ultra Ethernet, an alternative to the standard \ac{TCP}. It is more lightweight and an alternative to the \ac{NS-3} that includes view of network traffic as flows rather than individual packets, which is especially relevant for \ac{DML} setups.
-Both are more accurate than the analytical model. % (which reaches up to 95\% accuracy~\cite{})
+Both are more accurate than the analytical model. % (which reaches up to 95\% accuracy~\cite{.})
 % HTSim: Ultra Ethernet -> protocolle welche tcp ersetzen für workloads in HPC, AI und storage
 % INFINIBAND UND SLINGSHOT (kein ethernet) TODO they both need to presented and earlier
 
