@@ -194,7 +194,7 @@ The network layer simulates the hardware dependencies. The analytical version is
 
 % A feature layer necessary for \ac{ASTRA-Sim} to work is a network layer. 
 % three parts, called layers. They are separate simulators for workloads, system and the underlying network. 
-Figure \ref{fig:astra-architecture} shows the original architecture with the Garnet network simulator.
+Figure \ref{fig:astra-architecture} shows the original architecture with the Garnet network simulator. The different network backends are interchangeable as they all implement the same \etxtit{AstraNetworkAPI}.
 
 \begin{figure}[H]
     \centering
@@ -219,15 +219,42 @@ Lastly, \ac{ASTRA-Sim} exports its results into \ac{CSV} files. These show among
 Its initial release in 2020 includes a Garnet network. It was expanded later by an analytical network simulation. While Garnet is cycle accurate, so it simulates clock and packets in detail, the analytical network is based on mathematical approximate models. Therefore, the analytical model is slightly inaccurate, as it is for example not congestion aware, but it is more scalable than the garnet network.
 
 % 5. 2.0 & more extensions
-In 2023 a second version of \ac{ASTRA-Sim} was released~\cite{won_astra-sim20_2023}. It addresses the need for a higher scalable simulator, as deep learning models grew. 
-The workload layer was replaced with a chakra traced based workload layer. That is a graph based workload documentation~\cite{sridharan_chakra_2023}. % TODO is documentation the right word?
-It replaces the previous static trainings loop with a dynamic one based on \acp{ET}. \acp{ET} can be extracted form frameworks such as PyTorch. This workload layer supports more specific parallelization strategies \textit{(Pipeline, Hybrid-Parallel, ...)}. % TODO check if that makes sense, because hybrid was existing before
+In 2023 a second version of \ac{ASTRA-Sim} was released~\cite{won_astra-sim20_2023}. It addresses the need for a higher scalable simulator, as deep learning models grew. % TODO is documentation the right word?
+
+The loop is similar, with a few changes and extensions.
+First, the workload layer process. This workload layer was replaced with a chakra traced based workload layer. That is a graph based workload documentation~\cite{sridharan_chakra_2023}.
+So, it replaces the previous static trainings loop with a dynamic one based on \acp{ET}. An \ac{ET} is a graph that reproduces a real \ac{ML} training process. Each of its nodes represents either a \ac{GEMM}, an access of memory or a collective communication. They can for example be extracted form frameworks such as PyTorch and converted to Chakra \acp{ET}.
+This workload layer supports more specific parallelization strategies than the 1.0 version \textit{(Pipeline, Hybrid-Parallel, ...)}. % TODO check if that makes sense, because hybrid was existing before
+This represents a more realistic model of parallelization, as the \acp{NPU} are capable of executing varying operations. 
+After the \ac{ET} is read and distributed on configures \acp{NPU}, each gets its own graph to simulate. Time spend on the computation, communication and usage of storage get collected. These use other layers information.
+
+The system layer still manages the collective operations, depending on topoogies and scheduling strategies. A relevant difference to 1.0 is input got reduced to the only necessary parameters, ones reflected by chakra traces were crossed out. As a result it only features a topology, number of \acp{NPU}, internal bandwidth and internal latency. % TODO i think that is not interelly true.
+The idea is to completely abandon the inputs and retrieve them from chakra \ac{ET} too.
+
+% Network layer replacement
+For network simulation the network layer was used, and the two existing implementations were revised and additional backends added. 
+The analytical backend is still implemented as a scalable and fast approximate network simulator, but the Garnet backend was abandoned.  
+Now instead the \ac{NS-3}~\cite{riley_ns-3_2010} and the \ac{HTSim}~\cite{besta_towards_2021} backend can be used for the network simulation. 
+The \ac{NS-3} is a well established network simulator, that includes realistic network conditions with congestion and routing, which makes it suitable for simulation that needs to be very accurate and realistic. \ac{HTSim} rather focusses on the integration of Ultra Ethernet, an alternative to the standard \ac{TCP}. It is more lightweight and an alternative to the \ac{NS-3} that includes view of network traffic as flows rather than individual packets, which is especially relevant for \ac{DML} setups.
+Both are more accurate than the analytical model. % (which reaches up to 95\% accuracy~\cite{})
+% HTSim: Ultra Ethernet -> protocolle welche tcp ersetzen für workloads in HPC, AI und storage
+% INFINIBAND UND SLINGSHOT (kein ethernet) TODO they both need to presented and earlier
+
+The 2.0 version also includes a new layer, called memory layer. It is connected via an own memory \ac{API}. This models the \ac{HBM} previously managed by the system layer. It supports disaggregated memory architectures and realistic pipelines transfers with their according bandwidths, latencies and topologies. That way \ac{ASTRA-Sim} is able to compare these different known memory architectures depending on underlying \ac{DML} configurations.
+
+In general, \ac{ASTRA-Sim} 2.0 is more flexible that 1.0, by allowing many more configurations and realistic workloads. Its disadvantage is, that it is still being developed and changes are introduced. For a stable simulation 1.0 is the better choice, but in the future and for current research 2.0 will be more relevant.
+
 
 \subsubsection*{Comparison to Further Simulation Tools}
 % Weitere Tools: NS-3, MLPerf, SimGrid: Use cases & why it was not considered here
 
 A specialty of \ac{ASTRA-Sim} is that it supports hierarchical topologies, so it can model asymmetrical bandwidths. Also, it allows a differentiation between logical and physical topologies. This is especially relevant for research contexts.
 Additionally, it is easily extendable as layers can be exchanged and new factors such as new topologies or strategies can easily be added.
+
+% It is the only ...
+
+% TODO write if necessary
+
 
 % \begin{table}[H]
 %     \centering
@@ -249,11 +276,116 @@ Additionally, it is easily extendable as layers can be exchanged and new factors
 % Accessibility, UI patterns, visualization  ==> I HAVE TO DO LITERATURE REVIEW FIRST!!!!!
 % Human-Machine Interaction
 
+% \subsubsection*{Role of UI in Scientific Tools}
+% CLI vs GUI in research context
+% Define UI, UX, HCI
+
+Research tools in computer science are mostly based on \acp{CLI}. Including \acp{GUI} can increase use cases and amount of usage~\cite{sampath_accessibility_2021}.
+While \ac{UI} refers to the visual and interactive design of a digital product, \ac{UX} refers to the entire experience users go through when using digital tool. Both areas are highly interconnected and central for the users' satisfaction with a digital product~\cite{hamidli_introduction_2023}. % for developing a useable interface for digital tools.
+The study of \ac{UI} and \ac{UX} is \ac{HCI}, which in return gives it a scientific base. 
+In the following, design principles of \acp{UI} in general and in this projects specific context get explained and the current state of the art presented.  % TODO passe an nachdem das kapitel geschrieben ist
+
+
+\subsubsection*{Human-Computer Interaction Foundations}
+
+\ac{HCI} is an interdisciplinary area that deals with the design, evaluation and implementation of interactive computer systems~\cite{sinha_human_2010}. Its goal is to improve these systems in their functionality and usability. 
+Specific goals also include methods for designing and implementing user-friendly \acp{UI} as well as criteria for evaluating and comparing interfaces. \ac{HCI} also focusses on the development of new interaction techniques and models to human machine interactions. 
+
+This discipline was relevant from the moment on the first electronic computer in 1946 was used, called the \ac{ENIAC}~\cite{goldstine_electronic_1996}, which was used for computation of military firing tables. Later, with the development of \acp{GUI}, the internet and a wide base of useable tools, \ac{HCI} became an important field, also relevant for website design.
+
+\ac{HCI} claims that machines are worthless until they are properly useable. Two main aspects are the functionality and usability of machines.
+Functionality refers to the set of services a program provides. This value becomes only value if it is useable efficiency.
+Usability is the extent of which the system helps the users to activate their goals when using the machine. It depends on the needs of the target user group.
+Generally, in \ac{HCI} a system is only considered qualitative, if functionality and usability are balanced.
+
+% Cognitive Load
+One important sub category of \ac{HCI} is cognitive load. Kosch et al.~\cite{kosch_survey_2023} present its characteristics and measurements in the following way. 
+Defining cognitive workload is a challenge, it describes the amount of complexity the human brain gets presented with when executing tasks. In the field of website \ac{GUI} design this can be transferred as the complexity of brain processes a user goes through to navigate the website. Naturally, they should be minimized to ensure the least possible complexity when using the website. % TODO erwähne in chapter 3 die idee von einer NLP input, weil dass hier dann relevant wird.
+Because digital systems are getting increasingly more complex, measurements of cognitive workloads gets increasingly more difficult. They present metrics such as questionnaires, which are very subjective, physiological sensors which are very objective or presented behavior, like the users mouse activity.
+With those evaluations different layouts or navigation structures can be tested and compared. 
+
+
+% Principles of usability
+
+% Viuzualization
+
+% Feedback loops
+Another important sub-field of \ac{HCI} are feedback loops. Feedback is the direct response of a system to a users action and is central for users, especially when they interact with computers in the wrong way. %, but also important evidence for the user to satisfy thair expctations
+In \ac{GUI} design for example when entering values in a form or uploading files that are not meeting specific criteria, it needs to be made sure that users understand what went wrong and to give them feedback to reduce the possibility of this problem occurring again. No feedback, delayed feedback and wrong feedback can make the user feel frustrated and unable to take full advantage of functionalities.
+Pérez-Quiñones and Sibert present a foundational study on the feedback model based on the linguistic theory of \ac{SOU}~\cite{perez-quinones_collaborative_1996}.
+That is a model explaining which state humans think they are in during a conversation, based on expectations they have when communicating with each other.
+Instead of seeing communication as ping-pong iterations between two participants, here it is viewed as collaborative process based on Clark et Al.~\cite{clark_grounding_1991}. Basically, it includes four states a listener can be in after a speaker send a message. 
+% For example when a user input data into a form the computer can differentiate between not having received the input, not having understood the input, ...
+This original concept from the linguistic area was applied onto the \ac{HCI} area.
+The resulting five \ac{SSOU} represent states needed in communication between humans and computers to match the humans expectations. The stages are:
+
+\begin{flushleft}
+1.~The system is ready to receive inputs, \\
+2.~The user entered an input and the system processes that, \\
+3.~The result gets reported by the system, \\
+4.~The system ignores the input, \\
+5.~The system stores the inputs for a later processing. 
+\end{flushleft}
+
+For every stage the computer needs to provide specific feedback, so the user feels informed, and unnecessary interactions can be reduced. 
+
+
+
+
+% TODO in chapter 3 erwähne dass der fake sinner auf processing stage hindeutet AUCH: hpe grommet design vieles dementsprechend, buttons hervorgehoben etc
+
+
+
+
+\subsubsection*{UI/UX Best Practices and Evaluation Metrics}
+% Nielsen’s usability heuristics
+% Quantitative: task completion time, error rates, learning curve.
+% Qualitative: SUS (System Usability Scale), UEQ (User Experience Questionnaire).
+% Research-specific: reproducibility of workflows, error prevention in simulation setup.
+% mass user testing vs expert testing in my context
+% Mention: when a UI targets multiple groups, evaluation must consider different user personas (e.g., researchers vs. business users).
+
+
+% Personas DELETED BECAUSE: I do not have a dataset that i can base a persona on.
+One aspect that needs to be considered is the difference that target user groups bring with them. One technique to characterize user groups is by using personas~\cite{billestrup_persona_2014}. Using personas is supposed to help developers understand expectations, goals and contexts of users, to optimize the end product for the user.
+That way the user is central for the design process and can specifically be targeted. How efficient personas are depends on the quality of data it is based on and the depth of them.
+There are many possible strategies of building personas based on existing datasets. If there is no dataset available, an approach including expert interviews, existing knowledge and assumptions have to be used~\cite{pruitt_personas_2003}. 
+Each personas specification should include information such as daily routines, goals, fears, attitudes, technology behaviour, demographics, and existing knowledge.
+Personas can be used to design specific usability tests or specifications of necessary functionality. 
+Combined with \ac{HCI} it can be used to evaluate the necessity of certain aspects such as the extent of necessary feedback.
+
+% Non expert vs Expert users
+One classification that could be made for users is weather they are experts or non-experts in the field of the website. This is especially important for scientific tools.
+
+
+
+
+
+% \subsubsection*{UI and UX in Scientific and Simulation Tools}
+% Specific challenges
+% Inwiefern exsiting Simulators have UIs
+% Add: discuss how tools like TensorBoard and Jupyter already cross the boundary between research and broader communication (used by data scientists and ML engineers, not just simulator developers)
+% Position your contribution: few simulators have UIs that also support non-technical exploration
+
+
+
+% Prepare the ground for your own UI: “While most UIs in scientific simulators focus exclusively on expert users, our work considers broader accessibility, enabling stakeholders outside research — such as sales — to interact meaningfully with the simulator results.”
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 % TIPS VON CHATTI
-% Be selective: Don’t include everything—focus on what’s most relevant.
-% Synthesize, don’t summarize: Show connections, contradictions, and trends.
-% Use visuals: Diagrams, tables, or concept maps can clarify complex relationships.
-% End with a gap: Clearly state what’s missing in the literature and how your work fills it.
+% Be selective: Don’t include everything—focus on what’s most relevant
+% Synthesize, don’t summarize: Show connections, contradictions, and trends
+% Use visuals: Diagrams, tables, or concept maps can clarify complex relationships
+% End with a gap: Clearly state what’s missing in the literature and how your work fills it
