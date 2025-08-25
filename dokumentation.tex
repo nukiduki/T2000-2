@@ -74,10 +74,6 @@
 	\listoffigures
 	\cleardoublepage
 
-	% List of Listings
-	\lstlistoflistings
-	\cleardoublepage
-
 	\newpage
 	\cleardoublepage
 	
@@ -100,13 +96,17 @@
 	\cleardoublepage
 	\printbibliography
 
+	% List of Listings
+	\lstlistoflistings
+	\cleardoublepage
+
 	% Glossar
 	\printglossary[style=altlist,title=\langglossar]
 
 	% sonstiger Anhang
 	\clearpage
 	\appendix
-	\input{ads/appendix} % I COMMENTED IT OUT BECAUSE TABU IS NOT FOUND AND I DON'T KNOW HOW TO GET TABULARRAY WORKING
+	\input{ads/appendix}
 
 \
 

@@ -1,1 +1,115 @@
 % !TeX root = ../dokumentation.tex
+\begin{flushleft}
+    \setstretch{0.9}
+
+    \chapter{Full List of Modern UI Requirements}
+    \label{appendix:A}
+    % literature die 69 anfrderungen
+
+    \chapter{Persona Details}}
+    \label{appendix:B}
+
+    \subsubsection*{Demographics}
+    \begin{itemize}[leftmargin=*]
+        \item Angelina B Smith
+        \item 34 years old
+        \item American citizen by birth
+        \item Speaks English
+        \item Located in San Jose
+    \end{itemize}
+
+    \subsubsection*{Job}
+    \begin{itemize}[leftmargin=*]
+        \item Presales Specialist for \ac{AI} \& \ac{HPC} Infrastructure
+        \item \ac{HPE}
+        \item Bachelor's degree in Business Informatics
+    \end{itemize}
+
+    \subsubsection*{Daily Routine}
+    \begin{itemize}[leftmargin=*]
+        \item 08:00 Check emails, prioritize customer inquiries
+        \item 09:00 Coordinate with sales and technical architects
+        \item 10:30 Prepare solution proposals for customer projects
+        \item 12:00 Lunch break, often with colleagues
+        \item 13:00 Customer meetings, presentations, technical demos
+        \item 15:00 Research new technologies and internal tools
+        \item 17:00 Documentation, proposal preparation, follow-ups
+        \item 18:00 End of workday, occasionally networking events or webinars
+    \end{itemize}
+
+    \subsubsection*{Goals}
+    \begin{itemize}[leftmargin=*]
+        \item Convince customers with suitable infrastructure proposals
+        \item Communicate complex technical concepts clearly
+        \item Build technical trust with customers
+    \end{itemize}
+
+    \subsubsection*{Fears}
+    \begin{itemize}[leftmargin=*]
+        \item Overwhelming customers with overly technical language
+        \item Lack of transparency in performance predictions
+        \item Not understanding new tools or technologies quickly enough
+    \end{itemize}
+
+    \subsubsection*{Attitudes}
+    \begin{itemize}[leftmargin=*]
+        \item Enthusiastic about technology but pragmatic
+        \item Customer-oriented and solution-focused
+        \item Sees herself as a bridge between technology and sales
+    \end{itemize}
+
+    \subsubsection*{Technology Behaviour}
+    \begin{itemize}[leftmargin=*]
+        \item Uses tools like Teams, Excel, PowerPoint daily
+        \item Often works remotely: laptop, smartphone, VPN access
+    \end{itemize}
+
+    \subsubsection*{Knowledge}
+    \begin{itemize}[leftmargin=*]
+        \item Solid understanding of IT infrastructure and network topologies
+        \item No deep knowledge of simulation tools or distributed training
+        \item Experience with customers from various industries
+    \end{itemize}
+
+\end{flushleft}
+
+\chapter{Input Analysis}
+\label{appendix:inputs}
+\begin{table}[ht]
+    \centering
+    \resizebox{\textwidth}{!}{%
+        \begin{tabular}{|l|l|l|l|}
+            \hline
+            \textbf{System}               & \textbf{ASTRA-Sim Category} & \textbf{UI Category} & \textbf{Importance} \\
+            \hline
+            scheduling-policy             & System                      & Advanced-Workload    & 0                   \\
+            endpoint-delay                & System                      & Advanced-Network     & 0                   \\
+            active-chunks-per-dimension   & System                      & Advanced-Workload    & 0                   \\
+            preferred-dataset-splits      & System                      & Advanced-Workload    & 0                   \\  % TODO boost mode is not included is it?
+            all-reduce-implementation     & System                      & Workload             & 1                   \\
+            reduce-scatter-implementation & System                      & Workload             & 1                   \\
+            all-gather-implementation     & System                      & Workload             & 1                   \\
+            all-to-all-implementation     & System                      & Workload             & 1                   \\
+            collective-optimization       & System                      & Advanced-Workload    & 0                   \\
+            topology-name                 & Network                     & Network              & 0                   \\
+            dimensions-count              & Network                     & Network              & 1                   \\
+            topologies-per-dim            & Network                     & Network              & 1                   \\
+            dimension-type                & Network                     & Advanced-Network     & 0                   \\
+            units-count                   & Network                     & Accelerator          & 1                   \\
+            links-count                   & Network                     & Links                & 1                   \\
+            link-latency                  & Network                     & Links                & 1                   \\
+            link-bandwidth                & Network                     & Links                & 1                   \\
+            nic-latency                   & Network                     & Advanced-Network     & 0                   \\
+            router-latency                & Network                     & Advanced-Network     & 0                   \\
+            hbm-latency                   & Network                     & Accelerator          & 1                   \\
+            hbm-bandwidth                 & Network                     & Accelerator          & 1                   \\
+            hbm-scale                     & Network                     & Accelerator          & 1                   \\
+            parallelization-type          & Workload                    & Workload             & 1                   \\
+            dnn-layers                    & Workload                    & Workload             & 1                   \\
+            workload                      & Workload                    & Workload             & 1                   \\
+            \hline
+        \end{tabular}
+    }
+    \caption{System UI Configuration Overview}
+    \label{tab:system_ui}
+\end{table}

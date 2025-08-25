@@ -114,7 +114,7 @@ Generally, collectives can be separated into redistributive operations, that sha
 The most common collective used for data parallelism is \textit{All-Reduce}. In the following the approach of collectives is explained, based on \textit{All-Reduce} as an example. For guidance, figure \ref{fig:collectives} shows a visualization of the collective.
 The source for this explanation is the $25$th course lecture of UC Berkeley's course \textit{CS 168} in spring 2025 \cite{ratnasamy_collective_2025}.
 
-\begin{figure}[H]  % TODO make a better visualization maybe and make AllRecue to All-Reduce etc.
+\begin{figure}[h]  % TODO make a better visualization maybe and make AllRecue to All-Reduce etc.
   \centering
   \includegraphics[width=0.9\linewidth]{collectives.png}
   \caption{All-Reduce}
@@ -206,7 +206,7 @@ Figure \ref{fig:astra-architecture} shows the original architecture with the Gar
   \label{fig:astra-architecture}
 \end{figure}
 
-Each simulation iteration start with the initialization, where the user can specify their configurations. In the implementation this is separated by layer to a \ac{JSON} file for the network, a \ac{TXT} file for the system and a \ac{TXT} file for the workload. 
+Each simulation iteration start with the initialization, where the user can specify their configurations. In the implementation this is separated by layer to a \texttt{network.json} file for the network, a \texttt{system.txt} file for the system and a \texttt{workload.txt} file for the workload. 
 In the second step the workload gets produced. The loop produces sets of communication which again get separated into chunks for the processing.
 In the next step the chunks get sorted into \acp{LSQ} and dispatched. This stream gets supervises and restarted if necessary. 
 Next the final network simulation happens. In the analytical network the backend network gets simulated purely mathematically.
@@ -231,7 +231,7 @@ This workload layer supports more specific parallelization strategies than the 1
 This represents a more realistic model of parallelization, as the \acp{NPU} are capable of executing varying operations. 
 After the \ac{ET} is read and distributed on configures \acp{NPU}, each gets its own graph to simulate. Time spend on the computation, communication and usage of storage get collected. These use other layers information.
 
-The system layer still manages the collective operations, depending on topoogies and scheduling strategies. A relevant difference to 1.0 is input got reduced to the only necessary parameters, ones reflected by chakra traces were crossed out. As a result it only features a topology, number of \acp{NPU}, internal bandwidth and internal latency. % TODO i think that is not interelly true.
+The system layer still manages the collective operations, depending on topologies and scheduling strategies. A relevant difference to 1.0 is input got reduced to the only necessary parameters, ones reflected by chakra traces were crossed out. As a result it only features a topology, number of \acp{NPU}, internal bandwidth and internal latency. % TODO i think that is not interelly true.
 The idea is to completely abandon the inputs and retrieve them from chakra \ac{ET} too.
 
 % Network layer replacement
